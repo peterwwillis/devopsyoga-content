@@ -1,0 +1,19 @@
+# docker-machine-prompt.sh - change PS1 prompt to include docker machine name
+# Copyright (C) 2018 Peter Willis <peterwwillis@gmail.com>
+
+# Load user's bashrc file
+. ~/.bashrc
+
+# The following will evaluate a PROMPT_COMMAND (if it was set),
+# then it will replace any '\h' entry in the PS1 variable with
+# the DOCKER_MACHINE_NAME environment variable.
+function __dockermachine_name () {
+    [ -n "$1" ] && eval "$1"
+    PS1=${PS1/\\h/(docker-$DOCKER_MACHINE_NAME)}
+}
+if [ -n "$PROMPT_COMMAND" ] ; then
+    OLD_PROMPT_COMMAND=$PROMPT_COMMAND
+    PROMPT_COMMAND="__dockermachine_name '$OLD_PROMPT_COMMAND'"
+else
+    __dockermachine_name
+fi
