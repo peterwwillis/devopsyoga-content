@@ -76,5 +76,5 @@ exit
 
 ## Step 5. Easier loading of the dev machine
 
-To prevent having to type 'bash' and 'eval' as above, run [this bash script](./load-dev-machine.sh) instead. It will drop you into a new shell with the 'dev' machine loaded, and modify your prompt to signify you are using this new machine. Just run `exit` to drop back into your previous shell.
+To prevent having to type 'bash' and 'eval' as above, run [this bash script](./load-machine.sh) instead. It will drop you into a new shell with the 'dev' machine loaded, and modify your prompt to signify you are using this new machine. Just run `exit` to drop back into your previous shell.
 
