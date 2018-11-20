@@ -1,4 +1,4 @@
-# Setting Up Docker on Linux
+# Guide To Setting Up Docker Machine on Linux
 
 This guide sets up Docker Machine (a virtual machine with Docker installed) in order to control Docker in a pre-built environment.
 

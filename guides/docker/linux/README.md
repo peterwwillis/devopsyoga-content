@@ -1,4 +1,4 @@
-# Docker on Linux
+# Guide to Docker on Linux
 
  - [Using Docker in a Docker Machine](./machine/)
 
