@@ -1,16 +1,21 @@
 # DevOps Yoga
 
-Seeking DevOps enlightenment through practice
+A Wiki for DevOps.
 
-![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] 
+---
+<div style="text-align: center">
+![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] 
 
 ![][construction_anim_1] ![alt-text][construction_bar_rotate] ![][headdesk]
 
-![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] 
+![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2]
+</div>
 
-[What is DevOps?][1]
+---
 
-More content is coming, but we need your help! Visit the [GitHub repo][https://github.com/peterwwillis/devopsyoga-content] to help contribute. Send us an e-mail, open an issue, or a pull request!
+## [What is DevOps?][1]
+
+More content is coming, but we need your help! Visit the [GitHub repo](https://github.com/peterwwillis/devopsyoga-content) to help contribute. Send us an e-mail, open an issue, or a pull request!
 
 [1]: what-is-devops.md
 [construction_bar_rotate]: https://web.archive.org/web/20091027000226im_/http://de.geocities.com/cad_klaus_e/construction_bar_rotate_md_wht.gif
