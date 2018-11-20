@@ -44,3 +44,4 @@ Ultimately, it's clear from the results that the different organizations involve
 
 Similar situations happen to products all over the world, all the time. An agile culture won't solve these problems, but it will facilitate teamwork, which often leads to better outcomes.
 
+[1]: https://spectrum.ieee.org/aerospace/robotic-exploration/why-the-mars-probe-went-off-course
