@@ -3,13 +3,7 @@
 
 <!-- <div style="text-align: center"> -->
 {:refdef: style="text-align: center;"}
-![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] 
-{: refdef}
-
 ![][construction_anim_1] ![alt-text][construction_bar_rotate] ![][headdesk]
-{: refdef}
-
-![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2] ![][construction_anim_2]
 {: refdef}
 <!-- </div> -->
 
@@ -22,7 +16,7 @@ More content is coming, but we need your help! The content is in [GitHub repo's 
 [1]: what-is-devops.md
 [construction_bar_rotate]: https://web.archive.org/web/20091027000226im_/http://de.geocities.com/cad_klaus_e/construction_bar_rotate_md_wht.gif
 [construction_anim_1]: https://web.archive.org/web/20091027071000im_/http://geocities.com/jpdetroitusa/CONSTRUCTION_ANIMEE.gif
-[headdesk]: https://web.archive.org/web/20091024114538im_/http://www.geocities.com/paradisesurfing/head_construction.gif
+[headdesk]: ./images/1-6fc7c5cb566c.gif
 [construction_anim_2]: https://web.archive.org/web/20090821184406im_/http://geocities.com/Piano_Wizard/construction.gif
 
 ---

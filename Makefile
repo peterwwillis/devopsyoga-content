@@ -5,10 +5,13 @@
 #   PAGES_REPO_NWO=<username>/<reponame>
 #   JEKYLL_GITHUB_TOKEN=<a github token with public repo scope>
 
-all: update-deps jekyll-serve
+all:
+   
+dev: update-deps jekyll-serve
 
+# Set SKIP_BUNDLE_UPDATE=1 in 'make' command to skip this step
 update-deps:
-	bundle update github-pages
+	if [ -z "$$SKIP_BUNDLE_UPDATE" ] ; then bundle update github-pages ; fi
 
 jekyll-serve: envrc
 	jekyll serve
