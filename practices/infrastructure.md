@@ -1,9 +1,28 @@
 # Infrastructure
-## Considerations
 
-### Immutability
+'Infrastructure', wrt DevOps, refers to the hardware and software that is used to provide network services to end users. It includes everything from the networks connecting the internet together, to datacenters and physical servers, and the virtual servers and software running on them.
 
-## Checklist
+Every piece of infrastructure is considered a dynamic element in DevOps. It may need to grow or change from moment to moment, and must be tracked and changed with software tools, and those changes managed in version control.
+
+## [Infrastructure as Code]
+This term just means managing your infrastructure in version-controlled files. This could be as simple as writing down hostnames and IP addresses in a text file and saving them to [Git]. But ideally you would actually use modern [Infrastructure Orchestration Tools] to interpret configuration files and execute changes for you.
+
+Commonly IaC is implemented by checking some configuration files into a version control system (such as [Git]).
+
+Modern systems, called [Continuous Configuration Automation] systems, manage both the configuration and deployment of datacenter equipment. These are often referred to as "orchestration" tools.
+
+Older systems are typically [Configuration Management] tools which are used in order to deploy datacenter equipment.
+
+Examples:
+ - Terraform, AWS CloudFormation, Ansible Tower, Otter (orchestration)
+ - Ansible, Puppet, Chef, SaltStack (configuration management)
+
+## Immutability
+Links:
+ - [What is Immutable Infrastructure?](https://www.digitalocean.com/community/tutorials/what-is-immutable-infrastructure)
+
+
+## Requirements for Running Production Services
 
 ### Bootstrapping
  - Preparing infrastructure or its tools.
@@ -65,3 +84,5 @@
 
 [Example of Consul for Service Configuration]: https://codeblog.dotsandbrackets.com/consul-key-value-store-configuration/
 [Example 2 of Consul for Service Configuration]: https://awmanoj.github.io/tech/2016/08/27/service-discovery-configuration-management-with-consul/
+[Infrastructure as Code]: https://en.wikipedia.org/wiki/Infrastructure_as_code
+[Continuous Configuration Automation]: https://en.wikipedia.org/wiki/Continuous_configuration_automation

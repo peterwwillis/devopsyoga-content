@@ -6,9 +6,6 @@
  - Methods
  - Culture ([What is DevOps Culture?])
  - Practices ([What are DevOps Practices?])
-   - [Infrastructure Automation]
-   - Continuous Integration & Delivery
-   - Site Reliability Engineering
  - Tools
 
 ## Overview
@@ -20,7 +17,6 @@ Another way to think of DevOps is as agile methods, applied throughout an organi
 
 Implementing DevOps is a big undertaking, but not because the tools or processes are complicated. The biggest challenge is in changing everyone's mindset in order to become comfortable with new ways to work together.[citation needed]
 
-[Infrastructure Automation]: ./infrastructure.md
-[What is DevOps Culture?]: ./devops-culture.md
-[What are DevOps Practices?]: ./devops-practices.md
+[What is DevOps Culture?]: ./culture/
+[What are DevOps Practices?]: ./practices/
 
