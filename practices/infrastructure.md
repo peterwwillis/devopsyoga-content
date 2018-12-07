@@ -1,6 +1,10 @@
 # Infrastructure
 ## Considerations
 
+### Immutability
+
+## Checklist
+
 ### Bootstrapping
  - Preparing infrastructure or its tools.
 
