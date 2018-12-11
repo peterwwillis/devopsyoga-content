@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 from bs4 import BeautifulSoup
+import sys
+import json
+import argparse
 
 tool_chest_html = 'do-tool-chest.html'
 
@@ -59,31 +62,61 @@ class PageContent:
             tool_classes = [l.encode('ascii', 'ignore') for l in tool.get("class")]
             link, img = tool.a.get("href").encode('ascii','ignore'), tool.img.get("src").encode('ascii','ignore')
             text = tool.p.get_text().encode('ascii', 'ignore')
+            categories = []
+            for c_id, c_n in self.categories().items():
+                if c_id in tool_classes: categories.append(c_n)
+            #categories = [x for x, y in zip(self.categories().keys(), tool_classes) if y == x]
             #print "name %s id %s link %s img %s\nclass '%s'\ntext '%s'\n" % (tool_name, tool_id, link, img, tool_classes, text)
-            d[tool_id] = {'name': tool_name, 'id': tool_id, 'class': tool_classes, 'link': link, 'img': img, 'text': text }
+            d[tool_id] = {'name': tool_name, 'id': tool_id, 'class': tool_classes, 'link': link, 'img': img, 'text': text, 'category': categories }
 
         self.tool_list = d
         return self.tool_list
 
     def category(self, name):
-        cat_id = None
-        for type_id, cat in self.categories().items():
-            if name == cat:
-                cat_id = type_id
+        cat_list = [name]
+        if type(name) == type([]):
+            cat_list = name
+
+        cat_id_list = []
+        for type_id, c in self.categories().items():
+            for name in cat_list:
+                if name == c:
+                    cat_id_list.append(type_id)
 
         tool_list = []
         for tool_id, d in self.tools().items():
-            if cat_id in d["class"]:
-                print "tool %s" % d["name"]
-                tool_list.append(d)
+            for cat_id in cat_id_list:
+                if cat_id in d["class"]:
+                    #print "tool %s" % d["name"]
+                    tool_list.append(d)
 
         return tool_list
 
 def main():
     page = PageContent()
-    #print page.categories()
-    #print page.tools()
-    print page.category("Testing")
+
+    parser = options()
+    o = parser.parse_args()
+    if o.categories == None and o.tools == None:
+        parser.print_help()
+        exit(1)
+
+    if o.categories != None:
+        if len(o.categories) > 0:
+            print json.dumps( page.category(o.categories) )
+        else:
+            print json.dumps(page.categories())
+
+    if o.tools != None:
+        print json.dumps(page.tools())
+
+    return(0)
+
+def options():
+    parser = argparse.ArgumentParser(description='Decode the XebiaLabs DevOps tools page')
+    parser.add_argument('--categories', nargs='*', help='List all categories of tools, or all tools in a category')
+    parser.add_argument('--tools', help='List all the tools')
+    return parser
 
 if __name__ == "__main__":
     main()
