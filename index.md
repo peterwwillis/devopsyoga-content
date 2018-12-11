@@ -9,11 +9,13 @@
 
 ---
 
-# [What is DevOps?][1] (this is a link...)
+# [What is DevOps?][1]
+# [FAQ][2]
 
-More content is coming, but we need your help! The content is in [GitHub repo's gh-pages branch](https://github.com/peterwwillis/devopsyoga-content/tree/gh-pages) to help contribute. Send us an e-mail, open an issue, or a pull request!
+We need your help to generate more content! Fork our [GitHub repo's gh-pages branch](https://github.com/peterwwillis/devopsyoga-content/tree/gh-pages) to help contribute. Send us an e-mail, or open an issue or pull request.
 
 [1]: what-is-devops.md
+[2]: faq.md
 [construction_bar_rotate]: ./images/construction_bar_rotate_md_wht.gif
 [construction_anim_1]: ./images/CONSTRUCTION_ANIMEE.gif
 [headdesk]: ./images/1-6fc7c5cb566c.gif
