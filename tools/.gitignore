@@ -1,0 +1,3 @@
+tools.venv/
+*.pyc
+do-tool-chest.html

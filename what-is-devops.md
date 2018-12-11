@@ -6,7 +6,7 @@
  - Methods
  - Culture ([What is DevOps Culture?])
  - Practices ([What are DevOps Practices?])
- - Tools
+ - [Tools]
 
 ## Overview
 If you search for "What is DevOps?", you will find hundreds of pages that try to explain the concept. However, there is [broad acceptance of what DevOps means throughout the industry](https://devops.com/surprise-broad-agreement-on-the-definition-of-devops/).
@@ -19,4 +19,4 @@ Implementing DevOps is a big undertaking, but not because the tools or processes
 
 [What is DevOps Culture?]: ./culture/
 [What are DevOps Practices?]: ./practices/
-
+[Tools]: ./tools/

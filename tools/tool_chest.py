@@ -6,7 +6,7 @@ import argparse
 
 tool_chest_html = 'do-tool-chest.html'
 
-class PageContent:
+class ToolChest:
     def __init__(self):
         self.soup = None
         self.tool_list = None
@@ -93,7 +93,7 @@ class PageContent:
         return tool_list
 
 def main():
-    page = PageContent()
+    page = ToolChest()
 
     parser = options()
     o = parser.parse_args()
