@@ -41,7 +41,10 @@ class ToolChest:
             text = link.get_text()
             # Strip leading '.' from category id
             f = link['data-filter']
-            d[f.encode('ascii', 'ignore').strip('.')] = text.encode('ascii', 'ignore')
+            #d[f.encode('ascii', 'ignore').strip('.')] = text.encode('ascii', 'ignore')
+            print("type f %s" % type(f))
+            print("f %s" % f)
+            d[f.strip('.')] = text.encode('ascii', 'ignore')
 
         self.categories_list = d
         return self.categories_list
@@ -66,7 +69,7 @@ class ToolChest:
             for c_id, c_n in self.categories().items():
                 if c_id in tool_classes: categories.append(c_n)
             #categories = [x for x, y in zip(self.categories().keys(), tool_classes) if y == x]
-            #print "name %s id %s link %s img %s\nclass '%s'\ntext '%s'\n" % (tool_name, tool_id, link, img, tool_classes, text)
+            #print("name %s id %s link %s img %s\nclass '%s'\ntext '%s'\n" % (tool_name, tool_id, link, img, tool_classes, text))
             d[tool_id] = {'name': tool_name, 'id': tool_id, 'class': tool_classes, 'link': link, 'img': img, 'text': text, 'category': categories }
 
         self.tool_list = d
@@ -87,7 +90,7 @@ class ToolChest:
         for tool_id, d in self.tools().items():
             for cat_id in cat_id_list:
                 if cat_id in d["class"]:
-                    #print "tool %s" % d["name"]
+                    #print("tool %s" % d["name"])
                     tool_list.append(d)
 
         return tool_list
@@ -103,19 +106,20 @@ def main():
 
     if o.categories != None:
         if len(o.categories) > 0:
-            print json.dumps( page.category(o.categories) )
+            print(json.dumps( page.category(o.categories) ))
         else:
-            print json.dumps(page.categories())
+            print(json.dumps(page.categories()))
 
     if o.tools != None:
-        print json.dumps(page.tools())
+        print("tools: %s" % page.tools() )
+        print( json.dumps( page.tools() ) )
 
     return(0)
 
 def options():
     parser = argparse.ArgumentParser(description='Decode the XebiaLabs DevOps tools page')
     parser.add_argument('--categories', nargs='*', help='List all categories of tools, or all tools in a category')
-    parser.add_argument('--tools', help='List all the tools')
+    parser.add_argument('--tools', nargs='*', help='List all the tools')
     return parser
 
 if __name__ == "__main__":
