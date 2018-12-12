@@ -41,10 +41,8 @@ class ToolChest:
             text = link.get_text()
             # Strip leading '.' from category id
             f = link['data-filter']
-            #d[f.encode('ascii', 'ignore').strip('.')] = text.encode('ascii', 'ignore')
-            print("type f %s" % type(f))
-            print("f %s" % f)
-            d[f.strip('.')] = text.encode('ascii', 'ignore')
+            #d[f.strip('.')] = text.encode('ascii', 'ignore')
+            d[f.strip('.')] = text
 
         self.categories_list = d
         return self.categories_list
@@ -61,10 +59,10 @@ class ToolChest:
             # data-name is the tool title
             # data-id is the id of the tool
             # class contains the classes applying to this tool, including categories
-            tool_name, tool_id = tool.get("data-name").encode('ascii','ignore'), tool.get("data-id").encode('ascii','ignore')
-            tool_classes = [l.encode('ascii', 'ignore') for l in tool.get("class")]
-            link, img = tool.a.get("href").encode('ascii','ignore'), tool.img.get("src").encode('ascii','ignore')
-            text = tool.p.get_text().encode('ascii', 'ignore')
+            tool_name, tool_id = tool.get("data-name"), tool.get("data-id")
+            tool_classes = [l for l in tool.get("class")]
+            link, img = tool.a.get("href"), tool.img.get("src")
+            text = tool.p.get_text()
             categories = []
             for c_id, c_n in self.categories().items():
                 if c_id in tool_classes: categories.append(c_n)
@@ -111,7 +109,6 @@ def main():
             print(json.dumps(page.categories()))
 
     if o.tools != None:
-        print("tools: %s" % page.tools() )
         print( json.dumps( page.tools() ) )
 
     return(0)
