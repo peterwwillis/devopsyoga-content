@@ -7,7 +7,7 @@ MY_DIR := tool_chest
 all: $(MY_DIR).venv do-tool-chest.html categories.md $(DATA_DIR)/tools/categories.json
 
 $(MY_DIR).venv:
-	virtualenv $(MY_DIR).venv && \
+	virtualenv -p python3 $(MY_DIR).venv && \
 	. $(MY_DIR).venv/bin/activate && \
 	./$(MY_DIR).venv/bin/pip install -r parse-tool.requirements.txt
 
@@ -28,3 +28,6 @@ clean-local:
 
 clean-all: clean-local
 	rm -rf do-tool-chest.html $(MY_DIR).venv
+
+test:
+	./func_test.sh

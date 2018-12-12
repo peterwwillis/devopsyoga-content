@@ -1,6 +1,11 @@
 #!/usr/bin/env python
-import json, sys
+import json, sys, re
 from tool_chest import ToolChest
+
+def simplify(s):
+    s = re.sub(r"[^\w\s]", '', s)
+    s = re.sub(r"\s+", '-', s)
+    return s.lower()
 
 def html(page):
     for i, s in page.categories().items():
@@ -9,7 +14,7 @@ def html(page):
 def js(page):
     l=[]
     for t,c in page.categories().items():
-        l.append({"type":t, "category":c})
+        l.append({"type":t, "category":c, "cat": simplify(c) })
     print json.dumps(l)
 
 def main():
