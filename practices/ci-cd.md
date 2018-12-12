@@ -37,5 +37,5 @@ TBD; See the [Deployment] page.
 [Continuous Integration]: https://en.wikipedia.org/wiki/Continuous_integration
 [CI Common Practices]: https://en.wikipedia.org/wiki/Continuous_integration#Common_practices
 [Multi-stage Continuous Integration]: https://en.wikipedia.org/wiki/Multi-stage_continuous_integration
-[Infrastructure as Code]: ./iac.md
+[Infrastructure as Code]: ./infrastructure.md
 [Deployment]: ./deployment.md

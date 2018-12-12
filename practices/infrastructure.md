@@ -1,25 +1,40 @@
-# Infrastructure
+# DevOps Infrastructure
 
-'Infrastructure', wrt DevOps, refers to the hardware and software that is used to provide network services to end users. It includes everything from the networks connecting the internet together, to datacenters and physical servers, and the virtual servers and software running on them.
+'Infrastructure', with respect to DevOps, refers to the hardware and software resources that are used to provide services to end users. It includes everything from the networks connecting the internet together, to datacenters and physical servers, and the virtual servers and software running on them.
 
 Every piece of infrastructure is considered a dynamic element in DevOps. It may need to grow or change from moment to moment, and must be tracked and changed with software tools, and those changes managed in version control.
 
 ## [Infrastructure as Code]
-This term just means managing your infrastructure in version-controlled files. This could be as simple as writing down hostnames and IP addresses in a text file and saving them to [Git]. But ideally you would actually use modern [Infrastructure Orchestration Tools] to interpret configuration files and execute changes for you.
+This term just means managing your infrastructure in version-controlled files. This could be as simple as keeping hostnames and IPs in a text file in Git, but modern best practice is to use tools that interpret standard configuration files and execute changes.
 
-Commonly IaC is implemented by checking some configuration files into a version control system (such as [Git]).
-
-Modern systems, called [Continuous Configuration Automation] systems, manage both the configuration and deployment of datacenter equipment. These are often referred to as "orchestration" tools.
-
-Older systems are typically [Configuration Management] tools which are used in order to deploy datacenter equipment.
+The first tools used for IaC were [Configuration Management] tools like [Puppet] and [Chef], as well as orchestration like [AWS CloudFormation]. Modern [Continuous Configuration Automation] systems manage both the configuration and deployment of datacenter equipment, and are referred to as "orchestration" tools.
 
 Examples:
- - Terraform, AWS CloudFormation, Ansible Tower, Otter (orchestration)
- - Ansible, Puppet, Chef, SaltStack (configuration management)
+ - Orchestration / Continuous Configuration Automation
+   - Terraform, AWS CloudFormation, Ansible Tower, Otter (orchestration)
+ - Configuration Management
+   - Ansible, Puppet, Chef, SaltStack (configuration management)
 
-## Immutability
+## Immutable Infrastructure 
+The term 'immutable' means something cannot be modified after it is created. This is very useful for both software and infrastructure, as it allows us to simplify the method of resolving problems and avoid dangerous use patterns.
+
+If infrastructure is 'mutable', it may often change in subtle ways, which then become complex changes over time, introducing bugs. By keeping systems from changing over time, we reduce this eventuality.
+
+All immutable infrastructure must be created through a standard automated process, be version controlled, and pass a series of tests. This ensures that all changes are known and repeatable, and allows for simple roll-back in the event of problems.
+
+The benefits are immense. No more wrestling with a configuration management tool, connecting to all of your hosts, updating their software patches, taking out time to fix one or two which didn't update properly, trying to figure out who edited a file on one host one time three years ago, or trying to re-install an old server or package which nobody knows how to do anymore. Simply start a brand new instance from the version-controlled image, and disable/delete the old one when you are finished. To roll back, do the same procedure with a different version of the image.
+
+Examples:
+ - Docker containers
+ - Packer-created system images
+ - AWS EC2 AMIs
+
 Links:
  - [What is Immutable Infrastructure?](https://www.digitalocean.com/community/tutorials/what-is-immutable-infrastructure)
+ - https://www.sumologic.com/devops/devops-as-a-service/understanding-mutable-and-immutable-infrastructure/
+
+## Pets vs Cattle
+
 
 
 ## Requirements for Running Production Services
