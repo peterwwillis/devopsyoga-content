@@ -7,6 +7,9 @@ To test your changes, run 'make dev'. This will attempt to install the Jekyll
 bundle locally and run a local server for you to preview your content. See the
 Makefile for more details.
 
+To test changes in a docker container, run 'make docker'. The container will
+be run in the background.
+
   PUBLISHING CHANGES
 
 Push your changes to GitHub with 'git push' or equivalent. The GitHub Pages

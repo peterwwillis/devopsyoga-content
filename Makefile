@@ -23,3 +23,6 @@ update-deps:
 
 jekyll-serve: envrc
 	jekyll serve
+
+docker:
+	docker run -d --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
