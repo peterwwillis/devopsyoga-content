@@ -1,14 +1,13 @@
 ### What is this website about?
    This website is a free-form Wiki of all general knowledge involved in implementing [DevOps].
 
-### What is it for, though?
-   Modern software development and operations technology is changing faster than ever. Staying in the loop of what's changing involves a lot of research that crosses multiple specialities. And many of the lessons learned by one organization are being learned over again by others in painful repetition.
+### Why did you create it?
+   Basically, I was sick of all the time and effort needed to learn about DevOps. Most of the information about it is spread out through random blog posts on the internet and a few books, and it can take a long time to collate, intone, and spread this information.
 
-   We want to prevent the need to be constantly plugged into the latest trends in DevOps, or having to perform hours, weeks, or months of research to get caught up. The hope is that as this Wiki is constantly updated, the ability to learn more about DevOps will be quicker and easier. One-stop DevOps shopping.
+   I wanted a place I could go that just had everything I needed to learn about DevOps as it evolves. Nothing like that seemed to exist, so I created this space to collect it all. My hope is that other people will help update this website over time, to prevent the information from getting stale.
 
 ### So, what's that going to look like?
-
-   Explanation of the core ideas, some models for how to implement DevOps, How-to guides, overviews of technology, lessons learned from real organizations doing DevOps, links to articles and blog posts, sample code, etc.
+   Explanation of the core ideas, models for how to implement DevOps, how-to guides, overviews of technology, lessons learned from real organizations doing DevOps, links to articles and blog posts, sample code, etc.
 
 ### Isn't that kind of a big goal?
    Yep! This will be a long-term project, and will require collaboration by many volunteers.

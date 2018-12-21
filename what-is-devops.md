@@ -1,12 +1,11 @@
 # What is DevOps?
 
 ## Categories
- - Values
- - Principles
- - Methods
- - Culture ([What is DevOps Culture?])
- - Practices ([What are DevOps Practices?])
- - [Tools]
+ - [Values / Principles](./principles/)
+ - [Methods](./methods/)
+ - [Culture](./culture/)
+ - [Practices](./practices/)
+ - [Tools](./tools/)
 
 ## Overview
 If you search for "What is DevOps?", you will find hundreds of pages that try to explain the concept. However, there is [broad acceptance of what DevOps means throughout the industry](https://devops.com/surprise-broad-agreement-on-the-definition-of-devops/).
@@ -17,6 +16,3 @@ Another way to think of DevOps is as agile methods, applied throughout an organi
 
 Implementing DevOps is a big undertaking, but not because the tools or processes are complicated. The biggest challenge is in changing everyone's mindset in order to become comfortable with new ways to work together.[citation needed]
 
-[What is DevOps Culture?]: ./culture/
-[What are DevOps Practices?]: ./practices/
-[Tools]: ./tools/

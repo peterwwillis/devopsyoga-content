@@ -1,0 +1,7 @@
+testing:
+ - round out the func tests
+ - make unit tests
+
+features:
+ - generate a full page of tools and descriptions, with a link to the tool's page
+ - generate a page for each tool

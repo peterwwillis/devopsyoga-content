@@ -1,5 +1,6 @@
 # Continuous Integration & Delivery
 
+
 These two subjects, often referred to as "CI-CD", are similar yet separate concerns. They often use the same tools to accomplish different tasks.
 
 ## Continuous Integration
@@ -31,11 +32,14 @@ Though [Continuous Integration] comes from [Extreme Programming], it is not requ
 
 
 ## Continuous Delivery / Deployment
-TBD; See the [Deployment] page.
+You should probably just [read this book](https://continuousdelivery.com/).
 
+### Immutable Delivery
+CD should, ideally, take a page out of [Infrastructure as Code]'s playbook, and implement **immutable delivery**. This is when you deploy artifacts that are immutable, such as Docker containers with built application artifacts. If all of the components throughout a delivery pipeline are version-controlled and immutable, you can deliver reliable, immutable software to any environment.
 
 [Continuous Integration]: https://en.wikipedia.org/wiki/Continuous_integration
 [CI Common Practices]: https://en.wikipedia.org/wiki/Continuous_integration#Common_practices
 [Multi-stage Continuous Integration]: https://en.wikipedia.org/wiki/Multi-stage_continuous_integration
 [Infrastructure as Code]: ./infrastructure.md
 [Deployment]: ./deployment.md
+[1]: https://www.nginx.com/blog/devops-and-immutable-delivery/
