@@ -2,21 +2,23 @@
 title: DevOps Culture
 description: 
 ---
+# DevOps Culture
 
-# What is DevOps Culture?
-At its core, DevOps culture is inspired by the Agile Manifesto. DevOps was even sometimes referred to as "agile infrastructure" [citation needed]. But as DevOps encompasses many different roles and responsibilities, it doesn't strictly follow only agile methods [citation needed].
+Culture is probably the most important part of DevOps, both as a philosophy and a practice. It is impossible to accomplish the goals of DevOps if there is not a cross-organizational culture that embraces its [Values & Principles](../principles/). A single team cannot accomplish inter-team collaboration; it requires multiple teams all working together in the same way.
 
+What are some particular aspects of DevOps culture?
 
-## Lack of Silos
-<!-- TODO: may want to break out into its own section -->
-Most companies tend to organize their employees into teams based on common functions. Those teams can end up being siloed from one another, making progress difficult when it requires working across teams. In a DevOps culture, all teams that work on a product should be closely integrated.
+### Lack of Silos
+Most companies tend to organize their employees into teams based on common functions. While these teams can be productive as a single unit, they then often do not work well with other teams. Communication breaks down, people don't trust each other, and this all hurts productivity and quality of products.
 
-One example is in the way problems are addressed. In a traditional organization, if a software development team needed some infrastructure allocated, they may have to go through a time-consuming, complicated process. They may require multiple levels of approval, and then need to wait on someone to provide them their resources.
+In a DevOps culture, all teams that work on a product should be tightly integrated. This means engineers, managers, and executives all need to work together, too. Now it sounds more challenging, doesn't it? ;-)
 
-In a DevOps culture, the teams work together to find the least painful, most efficient way to accomplish the intended goals of both groups. This would ideally involve reviewing these requests often, removing approvals where they make no sense, and automating the building of infrastructure.
+Example:
+ - In a traditional organization, if a software dev team needs some infrastructure, they may have to use time-consuming, complicated processes, requiring multiple levels of approval, waiting on someone to provide them their resources.
 
-## Integrated Teams
-<!-- TODO: may want to break into section on integrating teams -->
+   - In a DevOps culture, the teams work together to find the least painful, most efficient way to accomplish the intended goals of both groups. This would ideally involve reviewing these requests often, removing approvals where they make no sense, and automating the building of infrastructure.
+
+### Integrated Teams
 A piece of software can't run in a vacuum. That is to say, eventually someone is going to be running that software, and it won't be the developers. In order to prevent problems down the road, it's best to have both software developers and operations engineers working on the same team.
 
 When some infrastructure needs to be prepared or changed, the conversation is already happening as the developers are beginning to write their code. The infrastructure changes can be tracked and discussed in a team scrum while development is taking place.
@@ -25,23 +27,9 @@ Another aspect of DevOps is how one team can influence the other to improve thei
 
 Even more teams can be integrated into the software development process. Quality assurance and software teams can be brought into the software development, and both learn how they will need to use or examine the software, and provide valuable feedback to improve the software at earlier stages.
 
-## Agile Culture
-<!-- TODO: may want to break out into its own section -->
-The Agile manifesto emphasizes "*individuals and interactions* over *processes and tools*.
+### Understanding cycle time
+With DevOps, you don't look at improving the productivity of a single team. Instead you look at the entire value stream that goes from planning to a money-making product, also known as the *"Aha to the Ka-ching!"* [1]. By focusing on all the people and processes involved, you can identify the real bottlenecks and improve the things that have the most impact on a product's end result (what customers want and will pay for).
 
-One example of this may have been the Mars Climate Orbiter. The multi-million-dollar project burned up in Mars' atmosphere due to an error made by one team that was then not corrected by a different team. The error was actually noticed, but was never fixed, partly due to over-reliance on formal process.[[1]] Quote from Wikipedia:
+Making IT cheaper and more efficient doesn't give you a better product, it just means you spent less on IT. This is part of why DevOps is about inter-team collaboration. 
 
-    The discrepancy between calculated and measured position, resulting in the discrepancy
-    between desired and actual orbit insertion altitude, had been noticed earlier by at
-    least two navigators, whose concerns were dismissed because they "did not follow the
-    rules about filling out [the] form to document their concerns". A meeting of
-    trajectory software engineers, trajectory software operators (navigators), propulsion
-    engineers and managers, was convened to consider the possibility of executing
-    Trajectory Correction Maneuver-5, which was in the schedule. Attendees of the meeting
-    recall an agreement to conduct TCM-5, but it was ultimately not done.
-
-Ultimately, it's clear from the results that the different organizations involved (Lockeed Martin, JPL, and NASA) in the product launch were not tightly integrated, and communication and decision-making was bogged down. Over-reliance on what people hoped would happen, combined with a lack of insight, and mis-matching work processes, led ultimately to a costly mistake.
-
-Similar situations happen to products all over the world, all the time. An agile culture won't solve these problems, but it will facilitate teamwork, which often leads to better outcomes.
-
-[1]: https://spectrum.ieee.org/aerospace/robotic-exploration/why-the-mars-probe-went-off-course
+[1]: https://itrevolution.com/devops-culture-part-1/

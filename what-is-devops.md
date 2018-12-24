@@ -14,5 +14,5 @@ The goal of DevOps is to improve the quality of software while speeding up its d
 
 Another way to think of DevOps is as agile methods, applied throughout an organization, to help a software product succeed.
 
-Implementing DevOps is a big undertaking, but not because the tools or processes are complicated. The biggest challenge is in changing everyone's mindset in order to become comfortable with new ways to work together.[citation needed]
+Implementing DevOps is a big undertaking, but not because the tools or processes are complicated. The biggest challenge is in changing everyone's mindset in order to become comfortable with new ways to work together.
 

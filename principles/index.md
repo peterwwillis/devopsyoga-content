@@ -6,6 +6,9 @@ DevOps and Agile have [things in common, and differences][2]. DevOps evolved whi
  * Working software over comprehensive documentation
  * Customer collaboration over contract negotiation
  * Responding to change over following a plan
+ * Iterative, Incremental, Continuous changes
+ * Automated, Self-service tools and services
+ * Holistic solutions to problems
 
 But DevOps is less focused on software development, and more focused on software delivery, so it adds a few more general principles, such as:
 
