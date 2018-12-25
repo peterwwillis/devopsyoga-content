@@ -1,4 +1,4 @@
-# Methods
+# DevOps Methods
 
 Though DevOps shares some values & principles with Agile, its methods actually differ quite a bit. DevOps does not specify any particular Agile methodology. In fact, some Agile methods can be incompatible with DevOps work.
 
@@ -34,12 +34,16 @@ Three principles:
 3. Software artifacts need to be elevated and bounded (i.e., visual) to their source (e.g., source code, source code repository) in order to be able to decrease the overall Lead Time of a service delivered.
   - Add metadata to built artifacts (e.g. Docker containers) to expose what it is, where it came from, how to monitor/maintain it, etc
 
+## Lean manufacturing-inspired
+
 ### [Continuous Learning][4]
 
 Using [Kaizen][5] to build knowledge and learn experimentally. Not unlike the retrospective after a scrum sprint. The general idea here is to experiment with how you do something, learn from it quickly, and then do it better. It's a very Lean/Agile way of moving development forward. By leveraging the past two methods, continuous learning is even faster.
 
 Ideally, as lessons are learned, they would be contributed back to an organizational knowledge base. In the absence of such a thing, you can just contribute what you've learned to this Wiki :-) (but no proprietary information, please)
 
+### Andon cords
+This is more interperative, but similar to Toyota's TPS system and its Andon cord, DevOps organizations implement their own forms of Andon cords. [This article](https://itrevolution.com/kata/) explains.
 
 
 ## Not Agile-specific
@@ -52,7 +56,7 @@ DevOps does *not* require values specific to software development, as you can ta
  * Informal design decisions
  * Lack of documentation
 
-The following methods are suggested to be applied in DevOps, in addition to Agile (or other) methods:
+The following methods **are** suggested to be applied in DevOps, in addition to Agile (or other) methods:
 
 ### Constant inter-team communication
 DevOps requires that development and operations coordinate their work on a regular basis. The reason is due to the specialized knowledge of how the application works that must be used by operations to keep the product working smoothly. The communication can be impersonal or official, but most of all it should be frequent, so knowledge is disseminated in time to respond to changes quickly.
