@@ -8,11 +8,13 @@
  - [Tools](./tools/)
 
 ## Overview
-If you search for "What is DevOps?", you will find hundreds of pages that try to explain the concept. However, there is [broad acceptance of what DevOps means throughout the industry](https://devops.com/surprise-broad-agreement-on-the-definition-of-devops/).
+If you search for "What is DevOps?", you will find hundreds of pages that try to explain the concept, but there is [broad acceptance of what DevOps means throughout the tech industry](https://devops.com/surprise-broad-agreement-on-the-definition-of-devops/).
 
-The goal of DevOps is to improve the quality of software while speeding up its delivery and operation. The way this is achieved is through a specific culture, a set of processes and tools, working closely with other teams, and constantly working to review and improve all of these aspects to reduce waste and increase quality, and thus business value.
+In short, the goal of DevOps is to improve the quality and experience of software products while speeding up delivery and operation. The way this is achieved is through a set of methods, tools and culture, combined with continuous improvement.
 
-Another way to think of DevOps is as agile methods, applied throughout an organization, to help a software product succeed.
+But DevOps is about more than just software. As you learn more about DevOps, you'll find it even spills into non-technical aspects of a business. This is because DevOps is really an amalgamation of principles and methods for improving a product or customer experience while keeping quality high. So DevOps can actually be applied throughout an organization, in virtually any industry.
 
-Implementing DevOps is a big undertaking, but not because the tools or processes are complicated. The biggest challenge is in changing everyone's mindset in order to become comfortable with new ways to work together.
+If you come from an Agile or Lean background, another way to think of DevOps is like Agile/Lean methods applied throughout an organization, with the exception that you don't need Agile or Lean to do DevOps.
+
+Also, you should realize that DevOps is a big undertaking not because the tools or processes are complicated. The biggest challenge is in changing everyone's mindset to become comfortable with new ways to work together. DevOps requires breaking down the barriers of traditional siloed teams in an organization, which is often a huge change to existing organizations.
 
