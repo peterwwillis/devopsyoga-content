@@ -4,7 +4,9 @@ DATA_DIR := ../../_data
 # I'm pretty sure I can get this out of a Make env variable, but anyway...
 MY_DIR := tool_chest
 
-all: $(MY_DIR).venv do-tool-chest.html $(DATA_DIR)/tools/categories.json
+all: build-all test
+	
+build-all: $(MY_DIR).venv do-tool-chest.html $(DATA_DIR)/tools/categories.json
 
 $(MY_DIR).venv:
 	virtualenv -p python3 $(MY_DIR).venv && \
