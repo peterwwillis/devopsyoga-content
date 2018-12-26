@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import json, sys, re
 from tool_chest import ToolChest
 
@@ -15,7 +15,7 @@ def js(page):
     l=[]
     for t,c in page.categories().items():
         l.append({"type":t, "category":c, "cat": simplify(c) })
-    print json.dumps(l)
+    print(json.dumps(l))
 
 def main():
     page = ToolChest()
