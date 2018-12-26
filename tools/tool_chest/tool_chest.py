@@ -4,6 +4,7 @@ import sys
 import json
 import argparse
 import re
+from slugify import slugify
 
 tool_chest_html = 'do-tool-chest.html'
 
@@ -12,11 +13,6 @@ class ToolChest:
         self.soup = None
         self.tool_list = None
         self.categories_list = None
-
-    def simplify(self, s):
-        s = re.sub(r"[^\w\s]", '', s)
-        s = re.sub(r"\s+", '-', s)
-        return s.lower()
 
     def body(self):
         if self.soup == None:
@@ -63,7 +59,7 @@ class ToolChest:
         """
         l=[]
         for t,c in self.categories().items():
-            l.append({"type":t, "category":c, "cat": self.simplify(c) })
+            l.append({"type":t, "category":c, "cat": slugify(c) })
         return l
 
     def tools(self):
