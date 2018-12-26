@@ -107,11 +107,11 @@ class ToolChest:
                     cat_id_list.append(type_id)
 
         tool_list = []
-        for tool_id, d in self.tools().items():
+        for tool in self.tools():
             for cat_id in cat_id_list:
-                if cat_id in d["class"]:
+                if cat_id in tool["class"]:
                     #print("tool %s" % d["name"])
-                    tool_list.append(d)
+                    tool_list.append(tool)
 
         return tool_list
 
