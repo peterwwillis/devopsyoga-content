@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="home">
+
+    {{ content }}
+
+    <h2>List of {{page.category}} Tools</h2>
+
+    Note: This tools list is currently are sourced from, and thus linked to, XebiaLabs. Much thanks to them for their valuable <a href="https://xebialabs.com/the-ultimate-devops-tool-chest/">DevOps Toolchest</a>. <br /> <br />
+
+    <table style="width:100%">
+    <tr><th>Name</th><th>Icon</th><th>Description</th></tr>
+        {% for tool in site.data.tools.tool_list %}{% if tool.category[0] == page.category %}
+          <tr>
+              <td> <a href="https://xebialabs.com/{{tool.link}}"><span class="tool-name">{{ tool.name | escape }}</span></a> </td>
+              <td style="width: 100px;"> <img src="{{tool.img}}" height="100" width="100"> </td>
+              <td> <span class="tool-meta">{{ tool.text | escape }}</span> </td>
+          </tr>
+        {% endif %}{% endfor %}
+    </table>
+
+</div>

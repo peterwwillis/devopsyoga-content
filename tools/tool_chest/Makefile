@@ -6,7 +6,7 @@ MY_DIR := tool_chest
 
 all: build-all test
 	
-build-all: $(MY_DIR).venv do-tool-chest.html $(DATA_DIR)/tools/categories.json
+build-all: $(MY_DIR).venv do-tool-chest.html $(DATA_DIR)/tools/categories.json $(DATA_DIR)/tools/tool_list.json
 
 $(MY_DIR).venv:
 	virtualenv -p python3 $(MY_DIR).venv && \
@@ -22,10 +22,14 @@ $(DATA_DIR)/tools/categories.json:
 	[ -d $(DATA_DIR)/tools ] || mkdir -p $(DATA_DIR)/tools
 	./tool_chest.sh --categories-more > $(DATA_DIR)/tools/categories.json
 
+$(DATA_DIR)/tools/tool_list.json:
+	[ -d $(DATA_DIR)/tools ] || mkdir -p $(DATA_DIR)/tools
+	./tool_chest.sh --tools > $(DATA_DIR)/tools/tool_list.json
+
 clean: clean-local
 
 clean-local:
-	rm -f $(DATA_DIR)/tools/categories.json categories.md *.pyc
+	rm -f $(DATA_DIR)/tools/categories.json $(DATA_DIR)/tools/tool_list.json *.pyc
 
 clean-venv:
 	rm -rf $(MY_DIR).venv
@@ -36,4 +40,4 @@ clean-html:
 clean-all: clean-local clean-venv clean-html
 
 test:
-	./func_test.sh
+	./func_test.sh >/dev/null

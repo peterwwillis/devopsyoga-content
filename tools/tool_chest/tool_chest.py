@@ -88,7 +88,7 @@ class ToolChest:
                 if c_id in tool_classes: categories.append(c_n)
             #categories = [x for x, y in zip(self.categories().keys(), tool_classes) if y == x]
             #print("name %s id %s link %s img %s\nclass '%s'\ntext '%s'\n" % (tool_name, tool_id, link, img, tool_classes, text))
-            h = {'name': tool_name, 'id': tool_id, 'class': tool_classes, 'link': link, 'img': img, 'text': text, 'category': categories }
+            h = {'name': tool_name, 'id': tool_id, 'class': tool_classes, 'link': link, 'img': img, 'text': text, 'category': categories, 'cat': slugify(categories[0]) }
             d.append(h)
 
         self.tool_list = d

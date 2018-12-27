@@ -16,7 +16,8 @@ Typical use of DevOps tools in a [DevOps Toolchain][1] follow a few general stag
 **Note:** We have seeded the tool list here with [XebiaLabs' Periodic Table of DevOps Tools]. However, our own content may supersede or conflict with theirs, so please see their website if you would like to compare.
 
 <ul class="tool-categories">
-  {% for block in site.data.tools.categories %}
+  {% assign cats = site.data.tools.categories | sort:'cat' %}
+  {% for block in cats %}
     <a href="{{ block.cat | prepend: site.baseurl }}">
       <li>
         <div class="category-name">
