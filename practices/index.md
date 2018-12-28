@@ -27,7 +27,7 @@ Immutability in DevOps refers to the idea that once we create something new, it 
 Using [Infrastructure as Code](./infrastructure.md), the provision of new infrastructure should happen automatically as it is needed. This helps drive down cost, gives the ability to scale with dynamic workloads, reduces human error, and speeds up development.
 
 ### Congruent environments
-Whenever possible, if multiple people or products use a particular kind of environment, they should be congruent (meaning always the same). For example, it should be possible to test and deploy new products directly into the environment used for production services. Another example is enabling everyone to use the exact same development environment, with the same tools, versions, and infrastructure. This congruence reduces conflicts over incompatibility, and speed development.
+Whenever possible, if multiple people or products use a particular kind of environment, they should be congruent (meaning always the same). For example, it should be possible to test and deploy new products directly into the environment used for production services. Another example is enabling everyone to use the exact same development environment, with the same tools, versions, and infrastructure. This congruence reduces conflicts over incompatibility, and speeds development.
 
 ## Service requirements
 In order to run services properly, DevOps has a series of [typical requirements for production services](./services.md).
