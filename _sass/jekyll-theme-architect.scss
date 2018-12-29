@@ -72,7 +72,7 @@ header h2 {
 }
 
 #content-wrapper {
-  padding-top: 30px;
+  padding-top: 5px;
   border-top: solid 1px #fff;
 }
 
@@ -201,7 +201,7 @@ form {
 
 #main-content h1 {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 0.4em;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 2.8em;
   font-weight: normal;
@@ -379,7 +379,7 @@ footer a:hover {
     font-size: 30px;
   }
   #main-content {
-    width: 490px;
+    width: 590px;
   }
   #main-content h1:before,
   #main-content h2:before,
@@ -468,7 +468,7 @@ footer a:hover {
 @media only screen and (max-width: 479px) { }
 
 
-/* #Markdown
+/* #Markdown Table of Contents
 ================================================== */
 
 // Adding 'Contents' headline to the TOC
@@ -492,4 +492,31 @@ footer a:hover {
     list-style: decimal;
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.7);
+    width: 200px;
 }
+
+/* #Page Nav Path
+================================================== */
+nav {
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+.crumbs ol {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+.crumb {
+    display: inline-block;
+}
+.crumb a::before {
+    display: inline-block;
+    color: #000;
+    content: '>';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+    padding-bottom: 0;
+    margin-bottom: 0px;
+}
+

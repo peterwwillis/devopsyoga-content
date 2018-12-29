@@ -28,7 +28,7 @@ Typical use of DevOps tools in a [DevOps Toolchain][1] follow a few general stag
   {% endfor %}
 </ul>
 
-### Notes
+## Notes
 
 [XebiaLabs' Periodic Table of DevOps Tools]: https://xebialabs.com/periodic-table-of-devops-tools/
 [1]: https://en.wikipedia.org/wiki/DevOps_toolchain

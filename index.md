@@ -1,12 +1,4 @@
 
-## Site Navigation
- - [DevOps Values / Principles](./principles/)
- - [DevOps Methods](./methods/)
- - [DevOps Culture](./culture/)
- - [DevOps Practices](./practices/)
- - [DevOps Tools](./tools/)
- - [Frequently Asked Questions (FAQ)](./faq.md)
-
 ## Overview
 If you search for "What is DevOps?", you will find hundreds of pages that try to explain the concept, but there is [broad acceptance of what DevOps means throughout the tech industry](https://devops.com/surprise-broad-agreement-on-the-definition-of-devops/).
 

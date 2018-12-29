@@ -1,0 +1,33 @@
+{% capture navWorkspace %}
+    {% capture my_nav %}{% endcapture %}
+    {% assign orderedList = include.ordered | default: false %}
+    {% assign minHeader = include.h_min | default: 1 %}
+    {% assign maxHeader = include.h_max | default: 6 %}
+    {% assign nodes = site.data.toc.horizontalnav %}
+    {% assign firstHeader = true %}
+
+    {% capture listModifier %}{% if orderedList %}1.{% else %}-{% endif %}{% endcapture %}
+
+    {% for node in nodes %}
+        {% if node.title == "" %}
+            {% continue %}
+        {% endif %}
+
+        {% if include.item_class %}
+            {% capture listItemClass %}{:.{{ include.item_class }}}{% endcapture %}
+        {% endif %}
+
+        {% capture my_nav %}{{ my_nav }}
+{{ listModifier }}{{ listItemClass }} [{% if include.sanitize %}{{ node.title | strip_html }}{% else %}{{ node.title }}{% endif %}]({% if include.baseurl %}{{ include.baseurl }}{% endif %}{{node.path}}{% if html_id %}#{{ html_id }}{% endif %}){% if include.anchor_class %}{:.{{ include.anchor_class }}}{% endif %}{% endcapture %}
+    {% endfor %}
+
+    {% if include.class %}
+        {% capture my_nav %}{:.{{ include.class }}}
+{{ my_nav | lstrip }}{% endcapture %}
+    {% endif %}
+
+    {% if include.id %}
+        {% capture my_nav %}{: #{{ include.id }}}
+{{ my_nav | lstrip }}{% endcapture %}
+    {% endif %}
+    {% endcapture %}{% assign navWorkspace = '' %}{{ my_nav | markdownify | strip }}

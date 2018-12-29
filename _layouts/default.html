@@ -1,3 +1,24 @@
+<!-- Page generated {{ site.time }} -->
+	{% assign crumbs = page.url | split: '/' %}
+    {% assign pagenav = "<nav class='crumbs'><ol>" %}
+	{% assign stoppingpoint = crumbs | size | minus: 1 %}
+    {% if stoppingpoint == -1 %}
+        {% capture pagenav %}{{pagenav}}<li class="crumb"><a href="{{basehref}}/">Home</a></li>{% endcapture %}
+    {% endif %}
+	{% for crumb in crumbs %}
+        {% if crumb == "" %}
+			{% capture basehref %}{{basehref}}{{ crumb }}/{% endcapture %}
+            {% capture pagenav %}{{pagenav}}<li class="crumb"><a href="{{basehref}}">Home</a></li>{% endcapture %}
+        {% elsif forloop.index > stoppingpoint %}
+			{% capture basehref %}{{basehref}}{{ crumb }}{% endcapture %}
+            {% capture pagenav %}{{pagenav}}<li class="crumb"><a href="{{basehref}}">{{crumb | capitalize}}</a></li>{% endcapture %}
+		{% else %}
+			{% capture basehref %}{{basehref}}{{ crumb }}/{% endcapture %}
+            {% capture pagenav %}{{pagenav}}<li class="crumb"><a href="{{basehref}}">{{crumb | capitalize}}</a></li>{% endcapture %}
+		{% endif %}
+	{% endfor %}
+    {% capture pagenav %}{{pagenav}}</ol></nav>{% endcapture %}
+
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
@@ -19,7 +40,8 @@
       <div class="inner">
         <a href="{{ '/' | absolute_url }}">
           <h1> {{ title | default: site.title }} </h1>
-          <div class="hh2"> {{ description | default: site.description }} </div>
+          <!-- <div class="hh2"> {{ description | default: site.description }} </div> -->
+          <h2> {{ description | default: site.description }} </h2>
         </a>
       </div>
     </header>
@@ -27,19 +49,25 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          {% include toc.html html=content ordered=True id="markdown-toc" %}
+          <!-- page content -->
           {{ content }}
         </section>
 
         <aside id="sidebar">
+          {% unless page.notoc %}
+          <!-- page navigation bar -->
+          {{pagenav}}
+          Site Links
+          <nav class="crumbs">
+          {% include nav.html ordered=True id="markdown-nav" %} 
+          </nav>
+          Page Sections
+          {% include toc.html html=content ordered=True id="markdown-nav" %}
+          {% endunless %}
           {% if site.show_downloads %}
             <a href="{{ site.github.zip_url }}" class="button">
               <small>Download</small>
               .zip file
-            </a>
-            <a href="{{ site.github.tar_url }}" class="button">
-              <small>Download</small>
-              .tar.gz file
             </a>
           {% endif %}
         </aside>

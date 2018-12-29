@@ -1,0 +1,6 @@
+---
+---
+ - Add a major navigation entry to _data
+ - Add some elements to pages to automatically link to the next major nav entry at top/bottom of pages
+ - Add major section navigation to right sidebar
+ - Add a break-out/selectable nav menu with all content (loaded from _data ?)

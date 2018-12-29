@@ -1,0 +1,13 @@
+horizontalnav:
+- title: Values / Principles
+  path: /principles/
+- title: DevOps Methods
+  path: /methods/
+- title: DevOps Culture
+  path: /culture/
+- title: DevOps Practices
+  path: /practices/
+- title: DevOps Tools
+  path: /tools/
+- title: Frequently Asked Questions (FAQ)
+  path: /faq.html
