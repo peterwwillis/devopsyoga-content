@@ -1,11 +1,11 @@
-# What is DevOps?
 
-## Categories
- - [Values / Principles](./principles/)
- - [Methods](./methods/)
- - [Culture](./culture/)
- - [Practices](./practices/)
- - [Tools](./tools/)
+## Site Navigation
+ - [DevOps Values / Principles](./principles/)
+ - [DevOps Methods](./methods/)
+ - [DevOps Culture](./culture/)
+ - [DevOps Practices](./practices/)
+ - [DevOps Tools](./tools/)
+ - [Frequently Asked Questions (FAQ)](./faq.md)
 
 ## Overview
 If you search for "What is DevOps?", you will find hundreds of pages that try to explain the concept, but there is [broad acceptance of what DevOps means throughout the tech industry](https://devops.com/surprise-broad-agreement-on-the-definition-of-devops/).
@@ -18,9 +18,6 @@ If you come from an Agile or Lean background, another way to think of DevOps is 
 
 Also, you should realize that DevOps is a big undertaking not because the tools or processes are complicated. The biggest challenge is in changing everyone's mindset to become comfortable with new ways to work together. DevOps requires breaking down the barriers of traditional siloed teams in an organization, which is often a huge change to existing organizations.
 
-# [FAQ][2]
-
+## Contributing to the Wiki
 We need your help to generate more content! Fork our [GitHub repo's gh-pages branch](https://github.com/peterwwillis/devopsyoga-content/tree/gh-pages) to help contribute. Send us an e-mail, or open an issue or pull request.
-
-[2]: faq.md
 

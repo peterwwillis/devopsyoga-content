@@ -18,15 +18,16 @@
     <header>
       <div class="inner">
         <a href="{{ '/' | absolute_url }}">
-          <h1>{{ title | default: site.title }}</h1>
+          <h1> {{ title | default: site.title }} </h1>
+          <div class="hh2"> {{ description | default: site.description }} </div>
         </a>
-        <h2>{{ description | default: site.description }}</h2>
       </div>
     </header>
 
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
+          {% include toc.html html=content ordered=True id="markdown-toc" %}
           {{ content }}
         </section>
 
@@ -55,12 +56,10 @@
         ga('send', 'pageview');
       </script>
     {% endif %}
-  </body>
 
-  <footer>
-  <hr>
-  <p style="text-align:center">
-    The content here is licensed with the CC-BY-SA-4.0 license, included in the <a href="LICENSE">LICENSE</a> file. <a href="https://github.com/peterwwillis/devopsyoga-content">(GitHub)</a>
-  </p>
-  </footer>
+    <footer>
+    <hr>
+      The content here is licensed with the CC-BY-SA-4.0 license, included in the <a href="LICENSE">LICENSE</a> file. <a href="https://github.com/peterwwillis/devopsyoga-content">(GitHub)</a>
+    </footer>
+    </body>
 </html>
