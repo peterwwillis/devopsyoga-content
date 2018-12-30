@@ -2,6 +2,7 @@
 ---
  - [x] Add a major navigation entry to _data
  - [ ] Add some elements to pages to automatically link to the next major nav entry at top/bottom of pages
+   - To implement: add front matter that declares previous/next page? Or look into how Jekyll handles it
  - [x] Add major section navigation to right sidebar
  - [ ] Add a break-out/selectable nav menu with _all_ content (loaded from _data ?)
  - [ ] Add a border around sidebar nav stuff
@@ -11,3 +12,9 @@
  - [ ] Mock up some kind of Git pre/post-push hook to try a build first.
    - [ ] Figure out what to do with Gemfile.lock
  - [ ] Fix page section ordering (currently dots, want numbers)
+ - [ ] Add a line-rule after page content's <h1> heading (change CSS)
+ - [ ] In 'Page Sections', add a line break after first <h1> category
+ - [ ] Fix 'services.md' Page Sections indentation
+ - [ ] Fix toc.html to stop breaking on bad page indentation
+ - [ ] Explicitly list all Wiki content below a major section in side-bar (so people know to find iac.md, services.md, etc)
+ - [ ] Start importing and sorting through all the DevOps bookmarks I have
