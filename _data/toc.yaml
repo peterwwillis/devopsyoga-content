@@ -1,6 +1,6 @@
 horizontalnav:
-- title: Definition
-  path: /definition.html
+- title: Overview
+  path: /overview.html
 - title: Values & Principles
   path: /principles/
 - title: Methods
