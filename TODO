@@ -18,3 +18,5 @@
  - [ ] Fix toc.html to stop breaking on bad page indentation
  - [ ] Explicitly list all Wiki content below a major section in side-bar (so people know to find iac.md, services.md, etc)
  - [ ] Start importing and sorting through all the DevOps bookmarks I have
+ - [ ] Go through and find weird, corrupted characters in content, could be utf?
+ - [ ] Go through and find content which is not linked anywhere (./practices/monitoring_* ??)
