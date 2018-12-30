@@ -7,22 +7,33 @@
 
 .PHONY: tools clean
 
-all: tools
+all: build
 
 tools:
 	make -C tools $*
 
 clean:
 	make -C tools clean
+	jekyll clean
 
-dev: all update-deps jekyll-serve
+build: tools update-deps jekyll-build
 
-# Set SKIP_BUNDLE_UPDATE=1 in 'make' command to skip this step
+jekyll-build:
+	. $(PWD)/envrc && \
+	jekyll doctor -t && \
+	jekyll build -t
+
+serve: tools update-deps jekyll-serve
+
+jekyll-serve: envrc
+	. $(PWD)/envrc && \
+	jekyll doctor -t && \
+	jekyll serve -t
+
+# Run 'make SKIP_BUNDLE_UPDATE=1' to skip this step
 update-deps:
 	if [ -z "$$SKIP_BUNDLE_UPDATE" ] ; then bundle update github-pages ; fi
 
-jekyll-serve: envrc
-	jekyll serve
-
 docker:
+	. $(PWD)/envrc && \
 	docker run -d --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages

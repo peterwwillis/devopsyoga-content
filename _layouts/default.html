@@ -39,10 +39,12 @@
     <header>
       <div class="inner">
         <a href="{{ '/' | absolute_url }}">
-          <h1> {{ title | default: site.title }} </h1>
-          <!-- <div class="hh2"> {{ description | default: site.description }} </div> -->
+            <h1> {{ title | default: site.title }} </h1>    <br />
           <h2> {{ description | default: site.description }} </h2>
         </a>
+        {% if site.github.is_project_page %}
+          <a href="{{ site.github.repository_url }}" class="button"><small>View project on</small> GitHub</a>
+        {% endif %}
       </div>
     </header>
 
@@ -87,7 +89,7 @@
 
     <footer>
     <hr>
-      The content here is licensed with the CC-BY-SA-4.0 license, included in the <a href="LICENSE">LICENSE</a> file. <a href="https://github.com/peterwwillis/devopsyoga-content">(GitHub)</a>
+      The content here is licensed with the CC-BY-SA-4.0 <a href="/LICENSE">license</a>. <a href="https://github.com/peterwwillis/devopsyoga-content">(GitHub)</a>
     </footer>
     </body>
 </html>
