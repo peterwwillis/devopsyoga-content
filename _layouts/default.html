@@ -19,6 +19,9 @@
 	{% endfor %}
     {% capture pagenav %}{{pagenav}}</ol></nav>{% endcapture %}
 
+<!-- Logic for 'edit this button' -->
+{% assign edit_url = site.github.repository_url | append: "/edit/gh-pages/" | append: page.path %}
+
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
@@ -61,8 +64,14 @@
           {{pagenav}}
           Site Links
           <nav class="crumbs">
-          {% include nav.html ordered=True id="markdown-nav" %} 
+          {% include nav.html ordered=True id="markdown-nav" %}
           </nav>
+          <ul>
+            {% if edit_url != "" %}
+            <li><a href="{{ edit_url }}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit this page on GitHub</a></li>
+            {% endif %}
+            <li><a href="{{site.github.repository_url}}/issues/new?body=File: [{{ page.path }}]({{site.url}}{{ page.url }})" class="nomunge"><i class="fa fa-check" aria-hidden="true"></i> File an issue about this page</a></li>
+          </ul>
           Page Sections
           {% include toc.html html=content ordered=True id="markdown-nav" %}
           {% endunless %}

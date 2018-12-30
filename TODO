@@ -1,6 +1,13 @@
 ---
 ---
- - Add a major navigation entry to _data
- - Add some elements to pages to automatically link to the next major nav entry at top/bottom of pages
- - Add major section navigation to right sidebar
- - Add a break-out/selectable nav menu with all content (loaded from _data ?)
+ - [x] Add a major navigation entry to _data
+ - [ ] Add some elements to pages to automatically link to the next major nav entry at top/bottom of pages
+ - [x] Add major section navigation to right sidebar
+ - [ ] Add a break-out/selectable nav menu with _all_ content (loaded from _data ?)
+ - [ ] Add a border around sidebar nav stuff
+ - [ ] Wrap more of sidebar with <nav> tags
+ - [ ] Go through content and update unlinked [Bracketed] text, possibly automate
+ - [ ] Get a site crawler to find broken links
+ - [ ] Mock up some kind of Git pre/post-push hook to try a build first.
+   - [ ] Figure out what to do with Gemfile.lock
+ - [ ] Fix page section ordering (currently dots, want numbers)

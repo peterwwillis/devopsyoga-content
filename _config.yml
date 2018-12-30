@@ -1,6 +1,7 @@
 #theme: jekyll-theme-architect
 #theme: minima
 
+repository: peterwwillis/devopsyoga-content
 url: https://devops.yoga
 title: DevOps.yoga
 description: 'A DevOps Wiki'
