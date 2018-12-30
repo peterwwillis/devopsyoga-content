@@ -1,5 +1,3 @@
----
----
 
 ### What is this website about?
    This website is a free-form Wiki of all general knowledge involved in implementing [DevOps].
@@ -26,5 +24,11 @@
 
 ### How can I contribute?
    Fork us on GitHub and send us a pull request! Pretty much all content will be accepted, assuming it can be licensed properly. If you don't want to use GitHub, send us a patch.
+
+### Why is the site called DevOps.*yoga*?
+
+Mostly it was just a short domain name, but DevOps does have things in common with [Yoga](https://en.wikipedia.org/wiki/Yoga).
+
+Both their principles describe a kind of culture based on a set of values and goals. They have different definitions depending on whom you ask, and are often misunderstood through pop culture. They are both misunderstood in pop culture as a reduction of one facet of their ideas. And they are both require a unique journey. They may be more different than alike, but they both seek enrichment, improvement, and enlightenment, through a multifaceted practice.
 
 [DevOps]: what-is-devops.md

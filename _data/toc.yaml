@@ -1,4 +1,6 @@
 horizontalnav:
+- title: Definition
+  path: /definition.html
 - title: Values & Principles
   path: /principles/
 - title: Methods

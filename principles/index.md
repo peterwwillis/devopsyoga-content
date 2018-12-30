@@ -18,8 +18,6 @@ But DevOps is less focused on software development, and more focused on software
 
 You can think of DevOps as widening Agile principles to encompass the systems and operations needed to maintain reliable, quality products for customers at scale.
 
----
-To continue learning about DevOps, read about its [Methods](../methods/).
 
 [1]: https://www.informationweek.com/devops/agile-vs-devops-10-ways-theyre-different/d/d-id/1326121
 [2]: https://www.guru99.com/agile-vs-devops.html

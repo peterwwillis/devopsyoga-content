@@ -39,6 +39,4 @@ Whenever possible, users (such as developers) should be able to build and contro
 As DevOps members develop their own software and products, they should ideally follow Agile methods. Frequent integration, testing, and deployment of code will result in faster, less error-prone software.
 
 
----
-To continue learning about DevOps, read about its [Tools](../tools/).
 

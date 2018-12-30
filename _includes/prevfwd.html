@@ -1,0 +1,17 @@
+<div style="text-align: center">
+{% capture prevfwdWorkspace %}
+{% assign hnav = site.data.toc.horizontalnav %}
+{% for entry in hnav %}
+{% if page.url contains entry.path %}
+  {% assign laste = forloop.index0 | minus: 1 %}
+  {% assign nexte = forloop.index0 | plus: 1 %}
+  {% if forloop.first == false %}
+    {% capture my_prevfwd %}{{my_prevfwd}}Prev: <a href="{{hnav[laste].path}}">{{hnav[laste].title}}</a> | {% endcapture %}
+  {% endif %}
+  {% if forloop.last == false %}
+    {% capture my_prevfwd %}{{my_prevfwd}}Next: <a href="{{hnav[nexte].path}}">{{hnav[nexte].title}}</a>{% endcapture %}
+  {% endif %}
+{% endif %}
+{% endfor %}
+{% endcapture %}{% assign prevfwdWorkspace = '' %}{{ my_prevfwd | strip }}
+</div>

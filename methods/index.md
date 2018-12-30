@@ -77,8 +77,6 @@ Short sprints don't always align with DevOps goals. Many tasks can't be complete
 In order to increase the reliability of products and to speed their deployment, automation should be applied whenever possible. But improperly applied automation can end up becoming inefficient compared to what a human can accomplish. So the quality of automation applied should be high, or else a human should intervene until automation can be improved. The availability and quality of the product being used by the end-user is the highest goal, and not simply the use of automation for automation's sake.
 
 
----
-To continue learning about DevOps, read about its [Culture](../culture/).
 
 [1]: https://www.bmc.com/blogs/devops-vs-agile-whats-the-difference-and-how-are-they-related/
 [2]: https://blog.docker.com/2015/05/docker-three-ways-devops/

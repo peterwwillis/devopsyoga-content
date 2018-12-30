@@ -32,7 +32,5 @@ With DevOps, you don't look at improving the productivity of a single team. Inst
 
 Making IT cheaper and more efficient doesn't give you a better product, it just means you spent less on IT. This is part of why DevOps is about inter-team collaboration. 
 
----
-To continue learning about DevOps, read about its [Practices](../practices/).
 
 [1]: https://itrevolution.com/devops-culture-part-1/

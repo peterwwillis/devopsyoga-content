@@ -1,8 +1,8 @@
 ---
 ---
  - [x] Add a major navigation entry to _data
- - [ ] Add some elements to pages to automatically link to the next major nav entry at top/bottom of pages
-   - To implement: add front matter that declares previous/next page? Or look into how Jekyll handles it
+ - [x] Add some elements to pages to automatically link to the next major nav entry at top/bottom of pages
+   - [x] To implement: add front matter that declares previous/next page? Or look into how Jekyll handles it
  - [x] Add major section navigation to right sidebar
  - [ ] Add a break-out/selectable nav menu with _all_ content (loaded from _data ?)
  - [ ] Add a border around sidebar nav stuff
