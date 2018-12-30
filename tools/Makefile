@@ -11,7 +11,9 @@ make_cat_pages: clean_cat_pages
 	./make_cat_pages.sh --write ../_data/tools/categories.json
 
 clean_cat_pages:
-	./make_cat_pages.sh --clean ../_data/tools/categories.json
+	if [ -e ../_data/tools/categories.json ] ; then \
+	    ./make_cat_pages.sh --force --clean ../_data/tools/categories.json ; \
+	fi
 
 clean: clean_cat_pages
 	make -C tool_chest clean $*
