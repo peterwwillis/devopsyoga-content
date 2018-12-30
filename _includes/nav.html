@@ -17,8 +17,12 @@
             {% capture listItemClass %}{:.{{ include.item_class }}}{% endcapture %}
         {% endif %}
 
+        {% assign linkclass = "" %}
+        {% if include.anchor_class %} {% capture linkclass %}{{include.anchor_class}}{% endcapture %} {% endif %}
+        {% if page.url == node.path %} {% capture linkclass %}{{linkclass}} active{% endcapture %} {% endif %}
+
         {% capture my_nav %}{{ my_nav }}
-{{ listModifier }}{{ listItemClass }} [{% if include.sanitize %}{{ node.title | strip_html }}{% else %}{{ node.title }}{% endif %}]({% if include.baseurl %}{{ include.baseurl }}{% endif %}{{node.path}}{% if html_id %}#{{ html_id }}{% endif %}){% if include.anchor_class %}{:.{{ include.anchor_class }}}{% endif %}{% endcapture %}
+{{ listModifier }}{{ listItemClass }} <a href="{% if include.baseurl %}{{include.baseurl}}{% endif %}{{ node.path }}"{% if linkclass != "" %} class="{{ linkclass }}"{% endif %}>{{ node.title }}</a> {% endcapture %}
     {% endfor %}
 
     {% if include.class %}
