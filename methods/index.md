@@ -2,11 +2,15 @@
 
 Though DevOps shares some values & principles with Agile, its methods actually differ quite a bit. DevOps does not specify any particular Agile methodology. In fact, some Agile methods can be incompatible with DevOps work.
 
+---
+
 ## Common Patterns
 
 Several patterns of implementing DevOps practices are common in the industry.
 
 One of those patterns is called **The Three Ways** (brief intro [here][6] and [here][9]).
+
+---
 
 ### The Three Ways
 
@@ -44,6 +48,7 @@ Using [Kaizen][5] to build knowledge and learn experimentally. Not unlike the re
 
 Ideally, as lessons are learned, they would be contributed back to an organizational knowledge base. In the absence of such a thing, you can just contribute what you've learned to this Wiki :-)
 
+---
 
 ### Lean Manufacturing-inspired methods
 
@@ -53,6 +58,7 @@ This is more interperative, but similar to Toyota's TPS system and its Andon cor
 #### Human-augmented automation
 The concept of [Autonomation][8] is to design automation that detects an error and stops a process so a human can intervene. One example includes software tests that hault deployment of a product if unexpected behavior is found. Whereas *fully-automated machines* can both detect and fix their own problems, *mostly-automated* or *pre-automated* machines can be made simpler and cheaper and allow a human to resolve a complex problem quickly.
 
+---
 
 ### Veering away from Agile
 DevOps does *not* require values specific to software development, as you can take any product and apply DevOps to it.
@@ -84,6 +90,7 @@ Often, DevOps members are allocated vertically throughout horizontal product tea
 Short sprints don't always align with DevOps goals. Many tasks can't be completed in the way software tasks are (using Scrum, for example). Instead, schedules are set based on the goal, which may be short-term or long-term, or which may be defined by another team's own deadlines. Compared to software developers, DevOps members may have tasks with higher priority introduced at random, putting timelines in constant flux. The work completed first should always be the most urgent to keep a product operating smoothly, so tasks of lesser importance may have missed deadlines if they are not realistically set. For example, an unexpected maintenance window may take precedence over delivering a feature on time, or automation to solve a recurring problem may be more urgent than building new functionality.
 
 
+---
 
 ## Beginning to implement DevOps Methods
 [This Link][7] provides some guidance on how to begin implementing the methods.

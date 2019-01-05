@@ -1,8 +1,8 @@
 # DevOps Culture
 
-Culture is probably the most important part of DevOps, both as a philosophy and a practice. Culture enforces all of the principles, methods, and practices of DevOps, and allows it to function across teams. It is impossible to accomplish the goals of DevOps if there is not a cross-organizational culture that embraces its [Values & Principles](../principles/).
+Culture is probably the most important part of DevOps, both as a philosophy and a practice. Culture enforces all of the principles, methods, and practices of DevOps, and allows it to function across teams.
 
-Just having a "DevOps team" cannot by itself accomplish inter-team collaboration. It requires multiple teams all working together in the same way.
+It is impossible to accomplish the goals of DevOps if there is not a cross-organizational culture that embraces its [Values & Principles](../principles/). Just having a "DevOps team" cannot by itself accomplish inter-team collaboration. It requires multiple teams all working together in the same way.
 
 What are some particular aspects of DevOps culture?
 
