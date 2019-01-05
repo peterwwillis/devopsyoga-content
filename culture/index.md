@@ -1,10 +1,8 @@
----
-title: DevOps Culture
-description: 
----
 # DevOps Culture
 
-Culture is probably the most important part of DevOps, both as a philosophy and a practice. It is impossible to accomplish the goals of DevOps if there is not a cross-organizational culture that embraces its [Values & Principles](../principles/). A single team cannot accomplish inter-team collaboration; it requires multiple teams all working together in the same way.
+Culture is probably the most important part of DevOps, both as a philosophy and a practice. Culture enforces all of the principles, methods, and practices of DevOps, and allows it to function across teams. It is impossible to accomplish the goals of DevOps if there is not a cross-organizational culture that embraces its [Values & Principles](../principles/).
+
+Just having a "DevOps team" cannot by itself accomplish inter-team collaboration. It requires multiple teams all working together in the same way.
 
 What are some particular aspects of DevOps culture?
 
@@ -28,7 +26,7 @@ Another aspect of DevOps is how one team can influence the other to improve thei
 Even more teams can be integrated into the software development process. Quality assurance and software teams can be brought into the software development, and both learn how they will need to use or examine the software, and provide valuable feedback to improve the software at earlier stages.
 
 ## Understanding cycle time
-With DevOps, you don't look at improving the productivity of a single team. Instead you look at the entire value stream that goes from planning to a money-making product, also known as the *"Aha to the Ka-ching!"* [1]. By focusing on all the people and processes involved, you can identify the real bottlenecks and improve the things that have the most impact on a product's end result (what customers want and will pay for).
+With DevOps, you don't look at improving the productivity of a single team. Instead you look at the entire value stream that goes from planning to a money-making product, also known as the *"Aha to the Ka-ching!"* \[[1]\]. By focusing on all the people and processes involved, you can identify the real bottlenecks and improve the things that have the most impact on a product's end result (what customers want and will pay for).
 
 Making IT cheaper and more efficient doesn't give you a better product, it just means you spent less on IT. This is part of why DevOps is about inter-team collaboration. 
 

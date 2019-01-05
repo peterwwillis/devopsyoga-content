@@ -1,21 +1,24 @@
----
-title: DevOps Practices
----
 # DevOps Practices
 
 DevOps encompasses engineering, business, and cultural practices. These practices should result in measurably more stable products that can be delivered quicker than using more traditional methods.
 
 ## Continuous Feedback & Improvement
-A focus on feedback and improvement is a key aspect in DevOps practices. This cornerstone of DevOps should be practiced early on with development teams, and later with other teams related to a produ
+A focus on feedback and improvement is a key aspect in DevOps practices. This cornerstone of DevOps should be practiced early on with development teams, and later with other teams related to a product. This is referred to as **DevOps [Kaizen][[5]**. [1] [2] [4]
+
+### Monitoring the Metrics of DevOps
+In order to continuously improve the organization, one must track how well it's doing at its methods and processes by [using metrics to monitor the processes][3]. Some common metrics to track include number of new incidents, Mean Time to Detect (MTTD), Mean Time to Repair/Resolve (MTTR), [Lead time], deployment frequency, and other process metrics, like the use of an [Andon cord].
 
 ### Continuous Integration, Build, Test, & Delivery
-Also known as CI/CD because of how often both of these different systems are run in parallel. This is often what people imagine when they think "DevOps", even though it's more of a software development practice that's been carried into DevOps. See the [Continuous Integration & Delivery](./ci-cd.md) page for more detail.
+Also known as CI/CD because of how often both of these different systems are run in parallel. This is often what people imagine when they think "DevOps", even though it's more of a software development practice that's been carried into DevOps.
+
+See the [Continuous Integration & Delivery](./ci-cd.md) page for more detail.
 
 ### Blameless Postmortems
 
 ### Customer Feedback
 
 ### Automated release management
+[Release management features of XebiaLabs' XL-Release][6].
 
 ## Immutable, version-controlled state
 Immutability in DevOps refers to the idea that once we create something new, it should never be changed; instead, something new should replace it. In addition, each of these creations should be versioned, so we can easily manage them. This is an incredibly powerful paradigm that solves many old problems, such as unexpected errors from tiny changes over time, and simplifying upgrade, rollback, and failover.
@@ -39,4 +42,9 @@ Whenever possible, users (such as developers) should be able to build and contro
 As DevOps members develop their own software and products, they should ideally follow Agile methods. Frequent integration, testing, and deployment of code will result in faster, less error-prone software.
 
 
-
+[1]: https://biztechmagazine.com/article/2016/06/kaizen-and-continuous-improvement-through-devops
+[2]: https://www.slideshare.net/dev2ops/dev-ops-kaizen-damon-edwards
+[3]: https://biztechmagazine.com/article/2016/06/metrics-businesses-need-know-adopting-devops
+[4]: https://www.developer.com/mgmt/a-kaizen-approach-for-devops-how-to-help-teams-find-and-fix-their-own-problems.html
+[5]: https://en.wikipedia.org/wiki/Kaizen
+[6]: https://xebialabs.com/products/xl-release/features/
