@@ -16,6 +16,7 @@ Also known as CI/CD because of how often both of these different systems are run
 See the [Continuous Integration & Delivery](./ci-cd.md) page for more detail.
 
 ### Blameless Postmortems
+[Blameless Postmortems at Etsy][7].
 
 ### Customer Feedback
 
@@ -55,3 +56,4 @@ As DevOps members develop their own software and products, they should ideally f
 [4]: https://www.developer.com/mgmt/a-kaizen-approach-for-devops-how-to-help-teams-find-and-fix-their-own-problems.html
 [5]: https://en.wikipedia.org/wiki/Kaizen
 [6]: https://xebialabs.com/products/xl-release/features/
+[7]: https://codeascraft.com/2012/05/22/blameless-postmortems/
