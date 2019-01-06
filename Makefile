@@ -23,14 +23,23 @@ clean-all: clean-deps
 	make -C tools clean-all && \
 	bundle exec jekyll clean
 
-build: tools update-deps jekyll-build
+fail-if-gemfile-changed:
+	DIFFOUT=$$(git diff Gemfile.lock) ; \
+	if [ -n "$$DIFFOUT" ] ; then \
+		echo -e "Gemfile.lock has changed! Please commit before running build.\n\n$$DIFFOUT" ; \
+		exit 1 ; \
+	fi
+
+generate: tools update-deps fail-if-gemfile-changed
+
+build: generate jekyll-build
 
 jekyll-build:
 	. $(PWD)/envrc && \
 	bundle exec jekyll doctor -t && \
 	bundle exec jekyll build -t
 
-serve: tools update-deps jekyll-serve
+serve: generate jekyll-serve
 
 jekyll-serve: envrc
 	. $(PWD)/envrc && \
