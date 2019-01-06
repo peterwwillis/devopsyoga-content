@@ -41,7 +41,7 @@ jekyll-serve: envrc
 # Run 'make BUNDLE_DEPLOYMENT=1' to use --deployment, which is kind of weird.
 # 
 # Read more about 'bundle install' weirdness at https://bundler.io/bundle_install.html
-update-deps:
+update-deps: update-ruby-rvm
 	. $(PWD)/envrc && \
 	if [ -z "$$SKIP_BUNDLE_UPDATE" ] ; then \
 		if [ ! -d ".bundle" ] ; then \
@@ -53,6 +53,30 @@ update-deps:
 		fi ; \
 		bundle update --all ; \
 	fi
+
+# To use the latest gems we need a recent ruby.
+# This will install it using rvm.
+# Right now it's defaulting to compiling it from scratch...
+# should probably fix that.
+update-ruby-rvm:
+	. $(PWD)/envrc && \
+	RUBY_WANT_VER=$$(cat $(PWD)/.ruby-version) ; \
+	if ! which ruby >/dev/null || ! ruby -v | grep -F $$RUBY_WANT_VER ; then \
+		if [ ! -d "rvm/rubies/ruby-$$RUBY_WANT_VER" ] ; then \
+			echo "Upgrading ruby! Hold on to your butts..." ; \
+			if [ ! -d "rvm.sh" ] ; then \
+				curl -sSL https://get.rvm.io > rvm.sh ; \
+			fi ; \
+			chmod 755 rvm.sh && \
+			./rvm.sh --path $(PWD)/rvm --ignore-dotfiles && \
+			./rvm/bin/rvm autolibs disable && \
+			./rvm/bin/rvm install $$RUBY_WANT_VER && \
+			"./rvm/rubies/ruby-$$RUBY_WANT_VER/bin/ruby" -v >/dev/null ; \
+		fi ; \
+	fi
+
+clean-ruby-rvm:
+	rm -rf rvm/
 
 clean-deps:
 	rm -rf vendor/ .bundle

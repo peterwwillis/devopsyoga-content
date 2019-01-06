@@ -1,5 +1,4 @@
 #theme: jekyll-theme-architect
-#theme: minima
 
 repository: peterwwillis/devopsyoga-content
 url: https://devops.yoga
@@ -8,3 +7,27 @@ description: 'A DevOps Wiki'
 
 plugins:
     - jekyll-sitemap
+
+encoding: utf-8
+
+# We need to exclude at least the 'rvm' directory, because there are some
+# Markdown examples which have bad UTF-8 and kill Jekyll. Also, extra files
+# slow down the generation and creates pages we don't want.
+exclude:
+    # Make sure the * character is in quotes! Yaml is picky.
+    - "*"
+
+# Intentionally include the files we want to build. This prevents accidentally
+# including extraneous files.
+include:
+    # Make sure the * character is in quotes! Yaml is picky.
+    - "*.md"
+    - assets/
+    - culture/
+    - guides/
+    - images/
+    - methods/
+    - practices/
+    - principles/
+    - tools/
+

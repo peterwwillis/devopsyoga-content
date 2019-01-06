@@ -1,3 +1,5 @@
+#!/bin/sh
+
 PAGES_REPO_NWO=github-user-name/repo-name
 JEKYLL_GITHUB_TOKEN=
 export PAGES_REPO_NWO
@@ -5,7 +7,24 @@ export JEKYLL_GITHUB_TOKEN
 
 # This is for if we installed Gems with --user-install option to the bundler.
 # Comment this out otherwise.
-if which ruby >/dev/null && which gem >/dev/null; then
-    PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+#if which ruby >/dev/null && which gem >/dev/null; then
+#    PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+#fi
+#export PATH
+
+# If we don't have the right version of ruby available, look for it in the
+# rvm directory. Make should create it if necessary.
+if [ -d rvm -a -r .ruby-version ] ; then
+	RUBY_WANT_VER=$(cat .ruby-version)
+	if ! which ruby >/dev/null || ! ruby -v | grep -F $RUBY_WANT_VER ; then
+        echo "Error: couldn't find the correct version of ruby installed!"
+        if [ -r "rvm/gems/ruby-$RUBY_WANT_VER/environment" ] ; then
+            . "rvm/gems/ruby-$RUBY_WANT_VER/environment"
+        fi
+    fi
 fi
 export PATH
+
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US:en
+export LC_ALL=en_US.UTF-8
