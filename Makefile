@@ -63,12 +63,12 @@ update-deps: update-ruby-rvm
 		bundle update --all ; \
 	fi
 
-# To use the latest gems we need a recent ruby.
-# This will install it using rvm.
-# Right now it's defaulting to compiling it from scratch...
-# should probably fix that.
+# To use the latest gems we need a recent ruby. This will install it using rvm.
+# If the system name that rvm detects is "unknown", will disable use of
+# autolibs and compile from scratch.
 update-ruby-rvm:
 	. $(PWD)/envrc && \
+	set -x ; \
 	RUBY_WANT_VER=$$(cat $(PWD)/.ruby-version) ; \
 	if ! which ruby >/dev/null || ! ruby -v | grep -F $$RUBY_WANT_VER ; then \
 		if [ ! -d "rvm/rubies/ruby-$$RUBY_WANT_VER" ] ; then \
@@ -78,7 +78,9 @@ update-ruby-rvm:
 			fi ; \
 			chmod 755 rvm.sh && \
 			./rvm.sh --path $(PWD)/rvm --ignore-dotfiles && \
-			./rvm/bin/rvm autolibs disable && \
+			if ./rvm/bin/rvm info | grep -q -e "name:.*unknown" ; then \
+				./rvm/bin/rvm autolibs disable ; \
+			fi && \
 			./rvm/bin/rvm install $$RUBY_WANT_VER && \
 			"./rvm/rubies/ruby-$$RUBY_WANT_VER/bin/ruby" -v >/dev/null && \
 			./rvm/bin/rvm cleanup all ; \
