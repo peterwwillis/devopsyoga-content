@@ -80,7 +80,8 @@ update-ruby-rvm:
 			./rvm.sh --path $(PWD)/rvm --ignore-dotfiles && \
 			./rvm/bin/rvm autolibs disable && \
 			./rvm/bin/rvm install $$RUBY_WANT_VER && \
-			"./rvm/rubies/ruby-$$RUBY_WANT_VER/bin/ruby" -v >/dev/null ; \
+			"./rvm/rubies/ruby-$$RUBY_WANT_VER/bin/ruby" -v >/dev/null && \
+			./rvm/bin/rvm cleanup all ; \
 		fi ; \
 	fi
 
