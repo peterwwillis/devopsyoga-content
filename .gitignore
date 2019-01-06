@@ -2,3 +2,4 @@ envrc
 _site/
 .jekyll-metadata
 vendor/
+.bundle/
