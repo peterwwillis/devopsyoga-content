@@ -16,6 +16,10 @@ clean:
 	make -C tools clean
 	jekyll clean
 
+clean-all:
+	make -C tools clean-all
+	jekyll clean
+
 build: tools update-deps jekyll-build
 
 jekyll-build:

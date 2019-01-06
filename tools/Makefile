@@ -17,3 +17,6 @@ clean_cat_pages:
 
 clean: clean_cat_pages
 	make -C tool_chest clean $*
+
+clean-all: clean_cat_pages
+	make -C tool_chest clean-all $*
