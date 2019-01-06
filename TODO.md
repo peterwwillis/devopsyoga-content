@@ -2,7 +2,7 @@
 
 This is where we can keep & organize all the work to do on the site.
 
-If you have a new issue, something you're working on, feature request, bug, whatever, feel free to pop it in here.
+If you have a new issue, something you're working on, feature request, bug, whatever, feel free to pop it in here. If you don't know what category it should be in, put it in "Incoming". If you have a really good feeling that your new item should be in a new category, add it. If you're not sure, ask.
 
 Anyone can grab any of these and start working on them. If you start work on something and it'll take longer than a day to finish, just edit it with "WIP", and maybe reference a PR or Issue if you have one. When you finish something, mark it off with an [x].
 
@@ -19,6 +19,8 @@ Anyone can grab any of these and start working on them. If you start work on som
  - [ ] Start importing and sorting through all the DevOps bookmarks I have
  - [ ] Get a site crawler to find broken links
  - [ ] Go through content and update unlinked [Bracketed] text, possibly automate
+ - [ ] Start working on an "implementing devops" category/page thing
+   - [ ] Write up the Chef DevOps Kungfu sections (https://www.youtube.com/watch?v=\_DEToXsgrPc, http://chef.github.io/devops-kungfu/#/40)
 
 ## Navigation
 ---
