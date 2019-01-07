@@ -59,6 +59,11 @@ This is more interperative, but similar to Toyota's TPS system and its Andon cor
 The concept of [Autonomation][8] is to design automation that detects an error and stops a process so a human can intervene. One example includes software tests that hault deployment of a product if unexpected behavior is found. Whereas *fully-automated machines* can both detect and fix their own problems, *mostly-automated* or *pre-automated* machines can be made simpler and cheaper and allow a human to resolve a complex problem quickly.
 
 #### Value Stream Mapping
+VSM is a useful way to visualize the entire chain of events involved with a product, from the first idea to a delivered product. [The intent][10] is to identify what parts provide value, and what parts are merely wasteful.
+
+This may start with [identifying the type of value stream][11], then [identifying the teams that support it, and documenting the work done][12].
+
+One example of making a value stream map [is here][14], and [here][15] are some tips.
 
 
 ---
@@ -108,6 +113,14 @@ Compared to software developers, DevOps members may have tasks with higher prior
 ## Beginning to implement DevOps Methods
 [This Link][7] provides some guidance on how to begin implementing the methods.
 
+### On [Team Organization][13]
+Often there is a tendency to produce functionally-oriented team structure (vertically-aligned organizational structure - think silos of sysadmins, network admins, dbadmins, etc) to minimize and centralize the amount of technical specialization. But this can often lead to long lead times for finishing tasks, which adds delays.
+
+Instead, by using market-oriented teams (horizontally-aligned - think product teams of testing, securing, deployment, support, etc), team members are more available to address tasks specific to a product as the task is needed to be solved. This provides more of a Lean-style of pulling new work items when they are needed, rather having to push work somewhere and wait for it to be completed. This of course also depends on a high amount of independence, cross-functional skills, and automation.
+
+These teams work better with reliable estimates of expected lead time for new tasks. Tracking metrics of work completion (as part of a value stream map above, for example) can help make these workflows more efficient.
+
+
 [1]: https://www.bmc.com/blogs/devops-vs-agile-whats-the-difference-and-how-are-they-related/
 [2]: https://blog.docker.com/2015/05/docker-three-ways-devops/
 [3]: https://blog.docker.com/2015/06/docker-three-ways-devops-2/
@@ -117,3 +130,9 @@ Compared to software developers, DevOps members may have tasks with higher prior
 [7]: https://caylent.com/devops-handbook-part-2-devops-methodology/
 [8]: https://en.wikipedia.org/wiki/Autonomation
 [9]: https://caylent.com/devops-handbook-part-1-the-three-ways-2/
+[10]: https://www.enov8.com/blog/devops-void-value-stream-mapping/
+[11]: https://itrevolution.com/starting-devops-value-stream/
+[12]: https://itrevolution.com/improve-flow-devops-value-stream/
+[13]: https://itrevolution.com/conways-law/
+[14]: https://www.xeridia.co.uk/blog/how-use-value-stream-mapping-devops-environment
+[15]: https://dzone.com/articles/value-stream-mapping-and-devops
