@@ -1,6 +1,6 @@
 # DevOps Practices
 
-DevOps encompasses engineering, business, and cultural practices. These practices should result in measurably more stable products that can be delivered quicker than using more traditional methods.
+DevOps encompasses engineering, business, and cultural practices. These practices should result in measurably more stable products that can be delivered quicker than more traditional methods.
 
 ---
 
