@@ -10,6 +10,9 @@ A focus on feedback and improvement is a key aspect in DevOps practices. This co
 ### Monitoring the Metrics of DevOps
 In order to continuously improve the organization, one must track how well it's doing at its methods and processes by [using metrics to monitor the processes][3]. Some common metrics to track include number of new incidents, Mean Time to Detect (MTTD), Mean Time to Repair/Resolve (MTTR), [Lead time], deployment frequency, and other process metrics, like the use of an [Andon cord].
 
+### Actionable, intelligent Alerts
+If alerts are reduntant, stateless, and have thresholds that must be continuously manually adjusted, they will cease to be useful and important. Instead, all alerts should be actionable, they should create a sense of urgency, and they should immediately alert the appropriate people. Ideally they also use some form of machine learning to adjust to spikes and troughs.
+
 ### Continuous Integration, Build, Test, & Delivery
 Also known as CI/CD because of how often both of these different systems are run in parallel. This is often what people imagine when they think "DevOps", even though it's more of a software development practice that's been carried into DevOps.
 

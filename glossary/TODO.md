@@ -1,0 +1,53 @@
+Terms to add:
+ - [ ] Change Failure Rate
+ - [ ] Definition of Done
+   - Microsoft's DevOps DoD: "Live in production, collecting telemetry that that examines the hypothesis which motivated the deployment." (https://www.slideshare.net/WillyPeterSchaub/devconf-moving-65000-microsofties-to-devops-with-visual-studio-team-services)
+ - [ ] Key Performance Indicators
+   - Microsoft's DevOps KPIs:
+     - Usage
+       - Acquisision, Engagement, Satisfaction, Churn, Feature Usage
+     - Process Velocity
+       - Time to Build, Time to Self Test, Time to Deploy, Time to Learn
+     - Live Site Health
+       - Time to Detect, Time to Communicate, Time to Mitigate, Customer Impact, Incident Prevention Items, Aging Live Site Problems, SLA per Customer, Customer Support Metrics
+     - Things we don't watch
+       - Original estimate
+       - Completed hours
+       - Lines of Code
+       - Team capacity
+       - Team burndown
+       - Team velocity
+       - Number of bugs found
+ - [ ] Deployment Hypothesis
+   - Microsoft's DevOps definition:
+     - "We belive (customer/business segment) wants (product/feature/service) because (value proposition)"
+ - [ ] Feature Flags
+ - [ ] Live Site Incidents
+   - Microsoft DevOps definition:
+     - Create LSI conference bridge
+     - DRI's brought in to call
+     - Gather data for root cause analysis
+     - Mitigate
+     - 5-15 minutes
+     - Every action recorded
+     - Rotate people during long running LSI's
+     - Repair Items to prevent reoccurrence and improve detection time
+ - [ ] Jidoka
+ - [ ] Heijunka
+ - [ ] Muda
+ - [ ] Muri
+ - [ ] Mura
+ - [ ] Kata
+ - [ ] Gemba
+ - [ ] Kanban
+ - [ ] Kaizen
+ - [ ] Poka-yoke
+ - [ ] Circuit Breaker
+ - [ ] War Game
+ - [ ] Program Management
+   - Microsoft DevOps definition:
+     - Team responsible for WHAT we're building and WHY we're building it
+ - [ ] Bug Cap
+   - Microsoft DevOps definition:
+     - <# on team> x 5 = bug cap. If # bugs exceeds cap, stop feature work.
+

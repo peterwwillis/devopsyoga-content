@@ -8,8 +8,6 @@ Though DevOps shares some values & principles with Agile, its methods actually d
 
 Several patterns of implementing DevOps practices are common in the industry.
 
-One of those patterns is called **The Three Ways**.
-
 ---
 
 ### The Three Ways
@@ -51,6 +49,8 @@ Ideally, as lessons are learned, they would be contributed back to an organizati
 ---
 
 ### Lean Manufacturing-inspired methods
+
+Some methods of DevOps come from the world of Lean Manufacturing and Lean Startups.
 
 #### Andon cords
 This is more interperative, but similar to Toyota's TPS system and its Andon cord, DevOps organizations implement their own forms of Andon cords. [This article](https://itrevolution.com/kata/) explains a bit.
@@ -107,6 +107,18 @@ Short sprints don't always align with DevOps goals. Many tasks can't be complete
 
 Compared to software developers, DevOps members may have tasks with higher priority introduced at random, putting timelines in constant flux. The work completed first should always be the most urgent to keep a product operating smoothly, so tasks of lesser importance may have missed deadlines if they are not realistically set. For example, an unexpected maintenance window may take precedence over delivering a feature on time, or automation to solve a recurring problem may be more urgent than building new functionality.
 
+#### Shift Left
+This refers to shifting aspects normally on the "right side" of the product lifecycle (design-> build-> test-> operate) [to the left side, earlier in the development process][17]. More generally, it means implementing operational considerations earlier in the development process.
+
+This includes earlier implementation of monitoring/metrics, automated testing, continuous integration and delivery, and [security analysis][18], to identify problems before they reach production. A report by IBM found that fixing these problems during requirements & design is [about 100x less expensive][19] than fixing it in production.
+
+Some of the processes of "shift left" include:
+ * Demand Planning
+ * Static Testing
+ * A Unified Test Strategy
+ * Risk Based Analysis
+
+One example of "Shift Left" that Microsoft uses is for as much testing to be done in a Pull Request as possible, during code review. 
 
 ---
 
@@ -119,6 +131,18 @@ Often there is a tendency to produce functionally-oriented team structure (verti
 Instead, by using market-oriented teams (horizontally-aligned - think product teams of testing, securing, deployment, support, etc), team members are more available to address tasks specific to a product as the task is needed to be solved. This provides more of a Lean-style of pulling new work items when they are needed, rather having to push work somewhere and wait for it to be completed. This of course also depends on a high amount of independence, cross-functional skills, and automation.
 
 These teams work better with reliable estimates of expected lead time for new tasks. Tracking metrics of work completion (as part of a value stream map above, for example) can help make these workflows more efficient.
+
+### Incremental Adoption
+For mid to large size organizations, some recommend [an incremental approach][16] to adopting DevOps, using six steps:
+1. Select a suitable, small-scale application
+2. Consider short and mid-length solutions
+3. Evaluate tools that both fit the enterprise and the project
+4. Develop a pre-production proof of concept
+5. Pilot the proof of concept into production
+6. Iterate on the pilot
+
+### Assessments
+[Microsoft DevOps Assessment][20]
 
 
 [1]: https://www.bmc.com/blogs/devops-vs-agile-whats-the-difference-and-how-are-they-related/
@@ -136,3 +160,8 @@ These teams work better with reliable estimates of expected lead time for new ta
 [13]: https://itrevolution.com/conways-law/
 [14]: https://www.xeridia.co.uk/blog/how-use-value-stream-mapping-devops-environment
 [15]: https://dzone.com/articles/value-stream-mapping-and-devops
+[16]: http://cdn.inedo.com/documents/Inedo-Incremental-DevOps.pdf
+[17]: https://www.quali.com/blog/what-do-devops-organizations-need-to-do-to-shift-left/
+[18]: https://www.itbusinessedge.com/articles/the-shift-left-approach-to-devops-security.html
+[19]: https://www.bmc.com/blogs/what-is-shift-left-shift-left-testing-explained/
+[20]: https://www.devopsassessment.net/
