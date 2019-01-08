@@ -50,4 +50,5 @@ Terms to add:
  - [ ] Bug Cap
    - Microsoft DevOps definition:
      - <# on team> x 5 = bug cap. If # bugs exceeds cap, stop feature work.
+ - [ ] Architectually Significant Requirements
 

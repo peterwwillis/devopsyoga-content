@@ -10,11 +10,12 @@ Anyone can grab any of these and start working on them. If you start work on som
 
 ## Incoming
 ---
- - [ ] Mock up some kind of Git pre/post-push hook to try a build first.
-   - [ ] Figure out what to do with Gemfile.lock
+ - [ ] Mock up some kind of Git pre/post-push hook to try a build before committing/pushing
+   - [x] Figure out what to do with Gemfile.lock
 
 ## Content
 ---
+ - [ ] Add to the index page whatever the most recent Git commits to the project were, as a sort of "News" section. If nobody knows the site is being updated, it will seem stale/old/uninteresting.
  - [ ] Go through and find content which is not linked anywhere (./practices/monitoring\_\* ??)
  - [ ] Start importing and sorting through all the DevOps bookmarks I have
  - [ ] Get a site crawler to find broken links
