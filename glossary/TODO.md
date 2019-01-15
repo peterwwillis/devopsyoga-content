@@ -1,4 +1,4 @@
-Terms to add:
+## Terms to Add [glossary]
  - [ ] Change Failure Rate
  - [ ] Definition of Done
    - Microsoft's DevOps DoD: "Live in production, collecting telemetry that that examines the hypothesis which motivated the deployment." (https://www.slideshare.net/WillyPeterSchaub/devconf-moving-65000-microsofties-to-devops-with-visual-studio-team-services)
@@ -51,4 +51,5 @@ Terms to add:
    - Microsoft DevOps definition:
      - <# on team> x 5 = bug cap. If # bugs exceeds cap, stop feature work.
  - [ ] Architectually Significant Requirements
+ - [ ] Service Owner Model
 

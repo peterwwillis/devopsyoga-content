@@ -48,6 +48,20 @@ Ideally, as lessons are learned, they would be contributed back to an organizati
 
 ---
 
+### Patrick Debois' [The Four Areas][21]
+
+#### Extend Delivery to Production
+ - This is where dev and ops collaborate to improve anything on delivering the project to production.
+#### Extend Operation to Project
+ - All information from production is radiated back to the project.
+#### Embed Project(Dev) into Operations
+ - When the project takes co-ownership of everything that happens in production.
+#### Embed Production(Ops) into Project
+ - When operations are involved from the beginning of the project.
+
+
+---
+
 ### Lean Manufacturing-inspired methods
 
 Some methods of DevOps come from the world of Lean Manufacturing and Lean Startups.
@@ -165,3 +179,4 @@ For mid to large size organizations, some recommend [an incremental approach][16
 [18]: https://www.itbusinessedge.com/articles/the-shift-left-approach-to-devops-security.html
 [19]: https://www.bmc.com/blogs/what-is-shift-left-shift-left-testing-explained/
 [20]: https://www.devopsassessment.net/
+[21]: http://www.jedi.be/blog/2012/05/12/codifying-devops-area-practices/
