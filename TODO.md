@@ -12,9 +12,6 @@ Anyone can grab any of these and start working on them. If you start work on som
 ## Incoming
  - [ ] Mock up some kind of Git pre/post-push hook to try a build before committing/pushing
  - [x] Figure out what to do with Gemfile.lock
- - [ ] Test issue: open
- - [x] Test issue: closed
- - [x] #3 Test issue: empty
 
 
 ---

@@ -52,6 +52,14 @@ Whenever possible, users (such as developers) should be able to build and contro
 ## Agile software development
 As DevOps members develop their own software and products, they should ideally follow Agile methods. Frequent integration, testing, and deployment of code will result in faster, less error-prone software.
 
+---
+## Notes
+
+### [Don't Just Automate][8]
+ > *"Organisations who think DevOps is about automating the Ops tasks just end up "slinging shit quicker". If you don't sort out the real problems in your system, you're basically just making localised optimisations. There's just no point. If your problem is that your software is hard to run, scale, operate and maintain - don't try to automate your deployments."*
+
+
+
 
 [1]: https://biztechmagazine.com/article/2016/06/kaizen-and-continuous-improvement-through-devops
 [2]: https://www.slideshare.net/dev2ops/dev-ops-kaizen-damon-edwards
@@ -60,3 +68,4 @@ As DevOps members develop their own software and products, they should ideally f
 [5]: https://en.wikipedia.org/wiki/Kaizen
 [6]: https://xebialabs.com/products/xl-release/features/
 [7]: https://codeascraft.com/2012/05/22/blameless-postmortems/
+[8]: https://devopsnet.com/2016/10/25/when-scrum-and-devops-go-bad/
