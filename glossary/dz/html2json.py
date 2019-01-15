@@ -50,6 +50,9 @@ for thing in start.find_all(["h3","p"]):
             for text in thing.find_all(text=True, recursive=True):
                 glosslist.add(text)
 
-table = glosslist.categories
+table = {}
+for cat, a in glosslist.categories.items():
+    for h in a:
+        table[ h['name'] ] = h[ 'description' ]
 
 print( json.dumps(dict(table)) )
