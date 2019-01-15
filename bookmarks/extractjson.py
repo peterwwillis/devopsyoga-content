@@ -41,17 +41,23 @@ class Find(object):
 
 def exclude_items(dct):
     for i in excluded:
-        if i in dct:
-            del dct[i]
+        if isinstance(i, str):
+            if i in dct:
+                del dct[i]
+        elif isinstance(i, dict):
+            for k, v in i.items():
+                if k in dct and dct[k] == v:
+                    del dct[k]
     return dct
 
 
 global excluded
-excluded = ["icon", "add_date"]
+excluded = ['icon', 'add_date', {'type': 'bookmark'}]
 
 with open(sys.argv[1]) as f:
     data = json.loads( f.read(), object_hook=exclude_items )
 
 o = Find(data)
 res = o.find_folder(sys.argv[2])
+
 print(json.dumps(res, indent=2, sort_keys=True))
