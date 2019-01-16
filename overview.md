@@ -32,5 +32,7 @@ In order to explain the concepts surrounding DevOps, this website attempts to co
 
  * <a href="./tools/" style="font-weight: bold">Tools</a> <br /> To implement the practices, we need tools made for the job, and there's quite a few.
 
+ * <a href="./glossary" style="font-weight: bold">Glossary</a> <br /> A glossary of DevOps terms.
+
 [1]: https://devops.com/devops-is-agile-for-the-rest-of-the-company/
 [2]: https://web.archive.org/web/20130115202519/http://dev2ops.dtosolutions.com/2010/11/devops-is-not-a-technology-problem-devops-is-a-business-problem/

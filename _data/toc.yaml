@@ -11,5 +11,7 @@ horizontalnav:
   path: /practices/
 - title: Tools
   path: /tools/
+- title: Glossary
+  path: /glossary/
 - title: About this site
   path: /about.html
