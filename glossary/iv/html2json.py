@@ -21,6 +21,6 @@ for thing in blah.find_all(["h2","p"]):
                 after = after.strip()
                 if len(after) < 1: continue
                 #print("link \"%s\" after \"%s\"" % (link, after))
-                table[link] = after
+                table[link] = after[0].upper() + after[1:]
 
 print( json.dumps(dict(table), indent=2, sort_keys=True) )

@@ -53,6 +53,6 @@ for thing in start.find_all(["h3","p"]):
 table = {}
 for cat, a in glosslist.categories.items():
     for h in a:
-        table[ h['name'] ] = h[ 'description' ]
+        table[ h['name'] ] = h['description'][0].upper() + h['description'][1:]
 
 print( json.dumps(dict(table), indent=2, sort_keys=True) )

@@ -6,6 +6,7 @@ data = BeautifulSoup( open(sys.argv[1]).read().encode('ascii', 'ignore'), "html.
 table = {}
 
 for row2 in data.body.find_all("div", attrs={"class": "az-term"}):
-    table[row2.a.text] = row2.p.text.replace('\n',' ').strip()
+    desc = row2.p.text.replace('\n',' ').strip()
+    table[row2.a.text] = desc[0].upper() + desc[1:]
 
 print( json.dumps(dict(table), indent=2, sort_keys=True) )
