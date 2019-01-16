@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 import sys, json
+from collections import OrderedDict
+
 
 class Find(object):
     """ Look for nested structures and return them """
@@ -51,6 +53,27 @@ def exclude_items(dct):
     return dct
 
 
+
+def sortit(d,r):
+    folders = []
+    everything = []
+    # first make two lists: one of dicts, one of folders, one everything else
+    for i in d:
+        if isinstance(i, list):
+            sortit(
+        if isinstance(i, dict):
+            if 'children' in i:
+                folders.append(i)
+            else:
+                everything.append(i)
+    # then do the folders, then everything else
+    for f in folders:
+        sortit(f, r)
+    for e in everything:
+        sortit(j, r)
+    return
+
+
 global excluded
 excluded = ['icon', 'add_date', {'type': 'bookmark'}]
 
@@ -59,5 +82,8 @@ with open(sys.argv[1]) as f:
 
 o = Find(data)
 res = o.find_folder(sys.argv[2])
+
+res2 = OrderedDict()
+sortit(res, res2)
 
 print(json.dumps(res, indent=2, sort_keys=True))
