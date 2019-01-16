@@ -26,18 +26,23 @@ letters:
       traffic between multiple application instances across multiple Availability
       Zones to ensure your app runs smoothly.
   - term: Amazon Aurora
-    desc: an AWS service, providing a cloud-based relational database, which became
+    desc: An AWS service, providing a cloud-based relational database, which became
+      <a href="https://itsvit.com/blog/aws-summit-2018-london-highlights-takeaways/" target="_blank" rel="noopener">
+      the most rapidly growing service in AWS history</a>. This database is 5 times
+      faster than MySQL and 3 times faster than PostgreSQL, not to mention it is a 
+      default database for many AWS products and services.
   - term: Amazon AWS
     desc: Amazon Web Services  the most popular cloud service provider (CSP) according
       to the aforementioned State of DevOps report of 2017, offering a wide variety
       of cloud computing services for businesses of all sizes.
   - term: Ansible
-    desc: an automation engine for various IT tasks, like cloud infrastructure provisioning
-      and configuration. Ansible is an open source tool that interacts with multiple
-      software modules via SSH connection, PowerShell scripts or various APIs.
+    desc: A configuration management and automation tool for various IT tasks, such as
+      cloud infrastructure provisioning and configuration. Ansible is an open source
+      tool that interacts with multiple software modules via SSH connection, PowerShell
+      scripts and various APIs.
   - term: Apache
-    desc: one of the most popular open source web servers (second only to NGINX),
-      a cross-platform tool for launching websites and applications.
+    desc: One of the most popular open source web servers (second only to NGINX), a
+      cross-platform tool for launching websites and applications.
   - term: API
     desc: Application Programming Interface, a set of clearly stated rules for communication
       between various software modules.
@@ -56,43 +61,36 @@ letters:
       the group is comprised of identical instances that are added or removed to meet
       the workload demands.
   - term: Asterisk
-    desc: the open source platform for phone calls over the Internet. It is one of
-      the most flexible solutions and can interact with multiple software tools via
-      APIs, enabling multifunctional and efficient inter-business communications.
+    desc: The open source platform for Voice over IP phone calls over the Internet. It
+      is one of the most flexible solutions and can interact with multiple software tools
+      via APIs, enabling multifunctional and efficient inter-business communications.
   - term: Autonomy
     desc: The ability to make changes with the resources currently available, without
       the need to defer to something or someone higher up in the hierarchy.
   - term: AWS CLI
     desc: AWS Command Line Interface  an AWS tool for managing various AWS services
       and products from a command line terminal.
-  - term: AWS VPC peering
-    desc: allows to combine the resources of several such clouds should the need arise.
 - letter: B
   entries:
   - term: Back-end
-    desc: the program engine that the user has no direct access to. This engine receives
-      requests from the user interface and performs certain operations, including
-      loading and saving the data to the database, etc.
+    desc: Software that the user has no direct access to. Receives requests from the
+      user interface and performs certain operations, including loading and saving the
+      data to the database, etc.
   - term: Backup
-    desc: a process of copying the important data to provide the reserve copy and
+    desc: A process of copying the important data to provide the reserve copy and
       enable restoration on demand, as well as the result of the backup process, an
       archive with files.
   - term: Bare-metal
-    desc: the case when the software is installed on the physical devices (hard disks),
-      omitting the virtualization layer.
+    desc: The case when software is installed on a physical device rather than a virtual
+      one.
   - term: Bastion host
-    desc: a special server used to access private networks and withstand hacker attacks.
+    desc: A special server used to access private networks and withstand hacker attacks.
       Usually hosts a single app (like a proxy server) and SSH keys for accessing
-      and managing the underlying cloud infrastructure. IT Svit uses bastion hosts
-      to provide
+      and managing the underlying cloud infrastructure.
   - term: Behavior-Driven Development (BDD)
     desc: A development methodology that asserts software should be specified in terms
       of the desired behavior of the application, and with syntax that is readable
       for business managers.
-  - term: Big Data analytics
-    desc: .
-  - term: Big Data analytics projects
-    desc: ', where there are multiple data types processes at various periods of time.'
   - term: Black Box Testing
     desc: A testing or quality assurance practice which assumes no knowledge of the
       inner workings of the system being tested, and which thus attempts to verify
@@ -101,10 +99,10 @@ letters:
     desc: The duplication of an object under review in source control so that the
       same code can be modified by more than one developer in parallel.
   - term: Bucket
-    desc: a logical unit in Amazon S3 (Simple Storage Service), used for storing multiple
+    desc: A logical unit in Amazon S3 (Simple Storage Service), used for storing multiple
       types of objects (mostly various data and the metadata that describes it).
   - term: Build
-    desc: a specific version of program code, mostly referred to as the stage of new
+    desc: A specific version of program code, mostly referred to as the stage of new
       feature development. The most important builds are Canary builds, where the
       new code is tested for compliance with the existing app functionality in the
       production environment before being shipped to the customers.
@@ -138,19 +136,20 @@ letters:
       CI/CD workflow ensures all the bugs are found and fixed early and the product
       is available at all times.
   - term: Cloud computing
-    desc: a dominating IT paradigm of accessing over the Internet the networks of
-      virtual servers for collecting, processing and storing data, running apps and
-      managing other resources. An opposite of using dedicated servers or personal
-      computers for that purpose.
+    desc: A popular IT paradigm where computing resources are hosted by a 3rd party,
+      usually using virtual servers, in such a way that resources can be automatically
+      scaled according to demand. The opposite of using a dedicated server or personal
+      computer.
   - term: CloudWatch
     desc: Amazon CloudWatch is the default Amazon service for monitoring the infrastructure
       and apps running on it. CloudWatch helps monitor and log the events, configure
       smart alerts and manage the system resources efficiently.
-  - term: Cluster
-    desc: a set of interconnected instances (
   - term: Commit
-    desc: the process of pushing the code to the Git repository and the resulting
-      piece of code pushed.
+    desc: The process of pushing software code to a version control Git repository, and
+      the resulting piece of code pushed. Typically contains a cryptographic hash that
+      uniquely identifies that commit. Commits may contain just a single line of code
+      changed, or many changes in many files. Commits typically cannot be altered, so
+      changing a commit requires creating a new one.
   - term: Complex-Adaptive Systems
     desc: Any system made of a collection of similar, smaller pieces that are dynamically
       connected and can change to adapt to changes for the benefit of a macrostructure.
@@ -163,17 +162,6 @@ letters:
     desc: A term for establishing and maintaining consistent settings and functional
       attributes for a system. It includes tools for system administration tasks such
       as IT infrastructure automation.
-  - term: Container
-    desc: a software envelope separating the app and all resources required to run
-      it from the infrastructure it runs on. Due to using Docker containers, any apps
-      can run on any OS with Docker and any issues of a single container dont affect
-      the rest of the system.
-  - term: Containerization
-    desc: Resource isolation at the OS (rather than machine) level, usually (in UNIX-based
-      systems) in user space. Isolated elements vary by containerization strategy
-      and often include file system, disk quota, CPU and memory, I/O rate, root privileges,
-      and network access. Much lighter-weight than machine-level virtualization and
-      sufficient for many isolation requirement sets.
   - term: Containers
     desc: Resource isolation at the OS (rather than machine) level, usually (in UNIX-based
       systems) in user space. Isolated elements vary by containerization strategy
@@ -191,15 +179,11 @@ letters:
       production deployments every day. It does everything that Continuous Delivery
       does, but the process is fully automated, and theres no human intervention at
       all.
-  - term: Continuous Integration
+  - term: Continuous Integration (CI)
     desc: A software development process where a branch of source code is rebuilt
       every time code is committed to the source control system. The process is often
       extended to include deployment, installation, and testing of applications in
       production environments.
-  - term: Continuous Integration (CI)
-    desc: Continuous Integration (CI) is a development practice that requires developers
-      to integrate code into a shared repository several times a day. Each check-in
-      is then verified by an automated build, allowing teams to detect problems early.
   - term: Continuous Quality
     desc: A principle that preaches the continuous quest for quality across the entire
       SDLC, starting from requirements definition, code development, testing, and
@@ -211,8 +195,7 @@ letters:
       delivery pipeline across all environments to obtain immediate feedback on the
       quality of a code build.
   - term: Cron job
-    desc: a scheduled process that will run a certain script on a server at the certain
-      time.
+    desc: A scheduled process that will run a given program on a server at a set time.
 - letter: D
   entries:
   - term: Dark Launch
@@ -221,7 +204,7 @@ letters:
       activated. The code is exercised, however, in a production setting without users
       being aware of it.
   - term: Datadog
-    desc: an efficient cloud monitoring service, allowing to analyze the processes
+    desc: An efficient cloud monitoring service, allowing to analyze the processes
       within any infrastructure, database or app at any scale, using a SaaS-based
       platform.
   - term: Delivery Pipeline
@@ -231,40 +214,39 @@ letters:
       go/no-go decision can be made. A delivery pipeline can be considered the result
       of optimizing an organizations release process.
   - term: Deployment
-    desc: a stage of the software delivery lifecycle, centered at packaging the new
+    desc: A stage of the software delivery lifecycle, centered at packaging the new
       software code, delivering it to the customers and updating the running apps,
       preferably without interrupting the end user experience.
   - term: Deployment Pipeline
-    desc: 'A deployment pipeline is an automated manifestation of your process for
-      getting software from version control into the hands of your users. (source:
-      informIT.com)'
+    desc: A deployment pipeline is an automated manifestation of your process for
+      getting software from version control into the hands of your users.
   - term: DevOps
-    desc: DevOps (development and operations) is a software development phrase used
-      to describe a type of agile relationship between Development and IT Operations.
-      The goal of DevOps is to improve communication, collaboration, and processes
-      between the various roles in the software development cycle, in order to improve
-      and speed up software delivery.
+    desc: DevOps a term used to describe a type of agile relationship between
+      Development and IT Operations (among other groups). The goal of DevOps is to
+      improve communication, collaboration, and processes between the various roles
+      in the software development cycle, in order to improve and speed up software
+      product delivery.
   - term: DevOps Intelligence
     desc: Providing the intelligence and insight companies need to deliver software
       more efficiently, with less risk, and with better results.
   - term: DevOps tools
-    desc: like Prometheus and Grafana.
+    desc: A tool used to perform the requirements of modern DevOps practices.
   - term: Django framework
-    desc: a high-level Python framework oriented at clean design, rapid development
+    desc: A high-level Python framework oriented at clean design, rapid development
       and high performance of the apps. Has found wide adoption in web development
       and Big Data processing.
   - term: Docker
-    desc: an open source platform for building, delivering and running app containers.
+    desc: An open source platform for building, delivering and running app containers.
       Docker is the basis of modern cloud computing, as it allows to leverage the
       cloud resources with utmost efficiency, providing a ubiquitous layer for building
       the cloud infrastructure.
   - term: Docker Swarm
-    desc: a container orchestration engine developed by Docker. It is a built-in Docker
+    desc: A container orchestration engine developed by Docker. It is a built-in Docker
       container clustering and scheduling tool capable of running thousands of containers
       at once. Unfortunately, it cannot boast the same functionality as Kubernetes
       and is literally out of use as of mid-2018.
   - term: Dockerfile
-    desc: a textual description of the Docker container build process, containing
+    desc: A textual description of the Docker container build process, containing
       all the commands required. Dockerfiles allow easy and efficient configuration
       and management of Docker container creation and launch.
 - letter: E
@@ -278,15 +260,15 @@ letters:
       that allows anyone to deploy and run Kubernetes on AWS infrastructure without
       the need to look under the hood and configure the clusters themselves.
   - term: ElasticSearch
-    desc: a RESTful, distributed engine for data search and analytics, built on Apache
+    desc: A RESTful, distributed engine for data search and analytics, built on Apache
       Lucene. As a heart of Elastic stack, Elasticsearch allows to store and process
       the data from multiple cloud monitoring and logging tools.
   - term: Environment
-    desc: all the server resources (OS, libraries, APIs, tools, and frameworks, etc.)
-      needed to run the software on various stages of its lifecycle (development,
+    desc: All the server resources (OS, libraries, APIs, tools, and frameworks, etc.)
+      needed to run software on various stages of its lifecycle (development,
       testing, staging, production).
   - term: Envoy
-    desc: a heavy-duty C++ proxy for processing the traffic between the microservices.
+    desc: A heavy-duty C++ proxy for processing the traffic between microservices.
   - term: Event-Driven Architecture
     desc: A software architecture pattern where events or messages are produced by
       the system, and the system is built to react, consume, and detect other events.
@@ -304,7 +286,7 @@ letters:
       the serverless computing billing scheme  you specify what needs to be done and
       pay for the resources consumed, without any manual cluster configuration.
   - term: FluentD
-    desc: an open source data collection and processing tool written in Ruby. It allows
+    desc: An open source data collection and processing tool written in Ruby. It allows
       input from a huge variety of tools like ElasticSearch and provides output to
       a wide selection of dashboards configured with multiple plugins.
   - term: Functional Testing
@@ -314,64 +296,61 @@ letters:
 - letter: G
   entries:
   - term: Git
-    desc: a distributed code version control system. Every developer using Git has
+    desc: A distributed code version control system. Every developer using Git has
       access to a full copy of the project code and history of changes to enable collaboration
       within the teams.
   - term: GitHub
-    desc: the most popular web-based hosting for code, running all Git features and
+    desc: The most popular web-based hosting for code, running all Git features and
       adding its own functionality. GitHub is the beating heart of open-source and
       proprietary software development.
   - term: GitLab
-    desc: an open source web-based Git portal tuned for DevOps performance, due to
+    desc: An open source web-based Git portal tuned for DevOps performance, due to
       the built-in support of CI/CD tools like Gitlab CI.
   - term: Gitlab CI
-    desc: a CI/CD runner for Gitlab, which allows the developers to build their code
+    desc: A CI/CD runner for Gitlab, which allows the developers to build their code
       automatically after each commit.
 - letter: H
   entries:
   - term: Helm
-    desc: an application manager running atop Kubernetes. This tool allows managing
-      the microservices at scale through convenient
-  - term: Helm charts
-    desc: and ensures smooth operations of complex Kubernetes infrastructures.
+    desc: An application manager running atop Kubernetes. This tool allows managing
+      the microservices at scale through convenient 
+      <a href="https://itsvit.com/blog/what-is-helm-and-why-you-should-love-it/">Helm charts</a>
+      and ensures smooth operations of complex Kubernetes infrastructures.
 - letter: I
   entries:
   - term: I/O throughput
-    desc: the number of input/output operations per second, a characteristic of data
+    desc: The number of input/output operations per second, a characteristic of data
       transfer capacity of a network or a drive.
-  - term: IaaS
-    desc: Infrastructure-as-a-Service the IT management model, where the computing
-      resources and the tools needed to run them are provided as a service to enable
-      the functioning of various platforms and apps.
-  - term: IaC
-    desc: Infrastructure as Code  one of the
   - term: Image
-    desc: a Docker image is an immutable snapshot of a container, including the instructions
-      on how to build a working Docker container for an app.
+    desc: Typically an immutable snapshot of a container or virtual machine, such as
+        a Docker container image, or an Amazon Machine Image (AMI).
   - term: InfluxDB
-    desc: an open source database for processing time series events. It is written
+    desc: An open source database for processing time series events. It is written
       in Go and used in infrastructure monitoring, high-availability data storage,
       and real-time analytics. It works best with
   - term: Infrastructure
-    desc: the whole complex of hardware, software, and processes required to run apps,
-      as well as to collect, manage and store data. One of the most important
-  - term: Infrastructure as a Service (IaaS)
-    desc: Cloud-hosted virtualized machines usually billed on a pay as you go basis.
-      Users have full control of the machines but need to install and configure any
-      required middleware and applications themselves.
-  - term: Infrastructure as Code
+    desc: The hardware, software, and processes required to run applications, as well
+      as to collect, manage and store data. One of the most important
+      <a href="https://itsvit.com/blog/moving-infrastructure-cloud-5-not-obvious-benefits/">
+      benefits of DevOps practices</a> is using the immutable infrastructure, which
+      means that in case of error a clean state of infrastructure is launched immediately,
+      rather than trying to fix the issue and suffering from downtime in the process.
+  - term: <a href="../practices/infrastructure.html">Infrastructure as Code (IaC)</a>
     desc: A system configuration management technique in which machines, network devices,
       operating systems, middleware etc. are specified in a fully automatable format.
       The specification or blueprint is regarded as code that is executed by provisioning
       tools, kept in version control and generally subject to the same practices used
       for application code development.
-  - term: Infrastructure-as-a-Service (IaaS)
-    desc: A self-service computing, networking, and storage utility on-demand over
-      a network.
+  - term: <a href="../practices/infrastructure.html">Infrastructure as a Service (IaaS)</a>
+    desc: An IT management model where computing, networking, and storage resources are
+      provided as self-service, hosted products. Typically hosted on virtualized
+      machines in the cloud and billed on a pay as you go basis. Users have full control
+      of the resources, but may need to install and configure any required middleware and
+      applications themselves.
   - term: Ingress controller
-    desc: a software module used to provide load balancing in Kubernetes pods.
+    desc: A software module used to provide load balancing in Kubernetes pods.
   - term: Instance
-    desc: in short, this is a virtual machine you run your app on. In broader terms,
+    desc: In short, this is a virtual machine you run your app on. In broader terms,
       this is a single group of resources needed to run an app (like a Docker container,
       for example).
   - term: Integration Testing
@@ -384,21 +363,17 @@ letters:
 - letter: J
   entries:
   - term: Jenkins
-    desc: an open source Java server enabling software delivery automation out-of-the-box.
+    desc: A user-friendly open source Java web server and user interface, enabling
+      Continuous Integration and Continuous Delivery automation out of the box. Lots
+      of plugins, ease of use, self-hosting, and zero charge has made this the most
+      popular CI/CD platform.
   - term: Jenkins job
-    desc: a process in Jenkins, needed to build code, run unit tests, generate code
+    desc: A process in Jenkins, needed to build code, run unit tests, generate code
       quality metrics, deploy the new app versions to production, etc.
 - letter: K
   entries:
-  - term: Kibana
-    desc: a part of the Elastic stack responsible for
   - term: Kubernetes
-    desc: an open source container management platform from Google.
-  - term: Kubernetes and Docker
-    desc: are the pillars of running modern workloads in the cloud.
-  - term: Kubernetes or Terraform
-    desc: manifests) can be stored in GitHub repositories, adjusted and versioned
-      the same as code, thus providing efficient automation of infrastructure provisioning.
+    desc: An open source container management platform from Google.
 - letter: L
   entries:
   - term: Lead Time
@@ -412,9 +387,6 @@ letters:
       concepts have been applied to software development as part of agile methodologies.
       The Value Stream Map (VSM), which attempts to visually identify valuable and
       wasteful process steps, is a key lean tool.
-  - term: Logstash
-    desc: a part of the Elastic stack responsible for server-side data collection,
-      processing and transfer to the storage. Logstash is essential for building
 - letter: M
   entries:
   - term: Mean Time Between Failures (MTBF)
@@ -438,25 +410,30 @@ letters:
       represent testing strategies and a test environment. From that model manual
       tests, test data, and automated tests can be generated automatically.
   - term: MongoDB
-    desc: one of the best and most popular open source NoSQL databases specializing
+    desc: One of the best and most popular open source NoSQL databases specializing
       in storing various types of documents in forms of libraries, rather than in
       tables with columns and rows. This means the data stored can be easily adjusted
       and even the structure of the database itself is quite flexible, which is hugely
-      beneficial for
+      beneficial for <a href="https://itsvit.com/blog/big-data-analytics-banking-sector/">
+      Big Data analytics projects</a>, where there are multiple data types processes at
+      various periods of time.
 - letter: N
   entries:
   - term: Nexus3
-    desc: a release control platform from Sonatype, built for combining inputs from
+    desc: A release control platform from Sonatype, built for combining inputs from
       multiple open source modules to ensure fast, secure and efficient software delivery
       lifecycle.
   - term: Nginx
-    desc: the most popular web server nowadays. The built-in capacities for load balancing,
+    desc: The most popular web server nowadays. The built-in capacities for load balancing,
       reverse caching and proxying make it a great choice for many use cases.
+  - term: Node.js
+    desc: An open-source, cross-platform JavaScript run-time environment that executes
+      JavaScript code server-side.
   - term: Node
-    desc: a physical or virtual machine within a Kubernetes cluster, used to host
+    desc: A physical or virtual machine within a Kubernetes cluster, used to host
       pods that run Docker containers.
   - term: Node pool
-    desc: a Kubernetes node pool is a group of several cluster points uniting the
+    desc: A Kubernetes node pool is a group of several cluster points uniting the
       machines with the same configuration, which can be essentially treated and managed
       as a single entity.
   - term: Non-functional Requirements (NFRs)
@@ -477,17 +454,17 @@ letters:
       installation with hardly any configuration or modification needs. When applied
       to the software delivery, a one-stop shop solution allows quick setup of a deployment
       pipeline.
-  - term: Open source
-    desc: the software delivery paradigm, where the copyright holders grant the users
+  - term: Open Source
+    desc: The software delivery paradigm, where the copyright holders grant the users
       the access to the app source code and the rights to read, adjust and distribute
       it to anyone for any goal.
   - term: OpenShift
-    desc: enterprise-grade container management platform for Kubernetes running on
+    desc: Enterprise-grade container management platform for Kubernetes running on
       on-prem cloud infrastructures, developed by Red Hat.
   - term: OpenStack
-    desc: an open source platform for building on-prem cloud infrastructures.
+    desc: An open source platform for building on-prem cloud infrastructures.
   - term: Orchestration
-    desc: a practice of automating the IT tasks (container management and infrastructure
+    desc: A practice of automating the IT tasks (container management and infrastructure
       configuration in particular) in the context of SOA, virtualization, environment
       provisioning. In short, it is a process of executing predefined tasks using
       predefined scripts executed with interactive tools like
@@ -514,7 +491,7 @@ letters:
     desc: Ansible playbooks are the instructions for infrastructure deployment, with
       detailed guides on executing the series of commands to perform specific tasks.
   - term: Pod
-    desc: a basic Kubernetes structure unit, a group of Docker containers deployed
+    desc: A basic Kubernetes structure unit, a group of Docker containers deployed
       to a single host.
   - term: Product Owner
     desc: A person or role responsible for the definition, prioritization and maintenance
@@ -527,7 +504,7 @@ letters:
     desc: The final stage in a deployment pipeline where the software will be used
       by the intended audience.
   - term: Prometheus
-    desc: an open source cloud monitoring solution with a powerful query language,
+    desc: An open source cloud monitoring solution with a powerful query language,
       time series database, dimensional data model and smart alerting capabilities.
   - term: Provisioning
     desc: The process of preparing new systems for users (in a Continuous Delivery
@@ -536,15 +513,12 @@ letters:
       systems, middleware etc. is handled by automated system configuration management
       tools, which also verify that the desired configuration is maintained.
   - term: ProxMox
-    desc: an open source Debian-based platform for deploying and managing virtual
+    desc: An open source Debian-based platform for deploying and managing virtual
       machines.
-  - term: Python
-    desc: an interpreted high-level programming language. Due to its efficiency and
-      speed, Python is now widely adopted for tasks from website development to
 - letter: R
   entries:
   - term: RabbitMQ
-    desc: a message broker, a software used to collect messages from your apps and
+    desc: A message broker, a software used to collect messages from your apps and
       store them until they are required for operations.
   - term: RDS
     desc: AWS Relational Database Service, a cloud database benefitting from a distributed
@@ -566,7 +540,7 @@ letters:
     desc: An automatic or manual operation that restores a database or program to
       a previously defined state.
   - term: Rolling update
-    desc: a process of smooth updates for an app without any downtime, performed instance
+    desc: A process of smooth updates for an app without any downtime, performed instance
       by instance. It uses Kubernetes to ensure uninterrupted app availability and
       positive user experience.
 - letter: S
@@ -598,7 +572,12 @@ letters:
       when code that is easy to implement in the short run is used instead of applying
       the best overall solution.
   - term: Terraform
-    desc: automates
+    desc: An open source infrastructure orchestration software from Hashicorp.
+      <a href="https://itsvit.com/blog/what-is-terraform-and-why-it-rocks/">Terraform</a>
+      automates <a href="https://itsvit.com/blog/use-terraform-kubernetes-manage-worlds/">
+      infrastructure deployment and management</a> through the use of declarative Terraform
+      manifests, which can be stored and versioned as the code to ensure repeatability and 
+      DevOps workflow continuity.
   - term: Test Automation
     desc: The use of special software (separate from the software being tested) to
       control the execution of tests and the comparison of actual outcomes with predicted
@@ -614,7 +593,7 @@ letters:
       run) testing to verify the behavior of individual pieces of code. TDD makes
       extensive use of unit tests to describe and verify intended behavior.
   - term: Unit testing
-    desc: the basis of CI/CD, unit testing is the practice of testing the app code
+    desc: The basis of CI/CD, unit testing is the practice of testing the app code
       in small chunks against the automated test codebase before building the app,
       to minimize the time needed to discover and fix the bugs, reducing the time
       to market for a product as a result.
@@ -629,11 +608,8 @@ letters:
       and engineering approaches. Value Stream Maps are used to identify essential
       process steps vs. waste that can be progressively eliminated from the process.
   - term: Vault
-    desc: a Hashicorp product for securely storing the secrets like SSH keys, tokens,
+    desc: A Hashicorp product for securely storing the secrets like SSH keys, tokens,
       passwords, API keys and other important elements of Kubernetes infrastructure.
-  - term: Virtual machin
-    desc: e  a basic unit of the cloud computing systems, an emulation of a physical
-      server running under a supervisor.
   - term: Virtual Machine (VM)
     desc: A software emulation of a physical computing resource that can be modified
       independent of the hardware attributes.
@@ -659,6 +635,6 @@ letters:
 - letter: Z
   entries:
   - term: Zabbix
-    desc: an open source cloud infrastructure monitoring service for tracking the
+    desc: An open source cloud infrastructure monitoring service for tracking the
       status of various network resources and services. Consists of a server and agents
       that enable smart alerting for distributed systems.
