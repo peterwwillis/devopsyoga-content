@@ -1,9 +1,11 @@
 all: build
 
-build: venv build-subdirs ../_data/glossary/index.yaml
+build: venv build-subdirs index.yaml
 
 build-subdirs:
 	for d in * ; do [ -d "$$d" ] && make -C "$$d" $* ; done
+
+install: ../_data/glossary/index.yaml
 
 ../_data/glossary/index.yaml: index.yaml
 	mkdir -p ../_data/glossary
