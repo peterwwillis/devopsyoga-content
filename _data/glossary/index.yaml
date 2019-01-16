@@ -1,9 +1,22 @@
 letters:
 - letter: A
   entries:
+  - term: A/B Testing
+    desc: A technique in which a new feature, or different variants of a feature,
+      are made available to different sets of users and evaluated by comparing metrics
+      and user behavior.
+  - term: Acceptance Testing
+    desc: Typically high-level testing of the entire system carried out to determine
+      whether the overall quality of both new and existing features is good enough
+      for the system to go to production.
   - term: Agent
-    desc: A program installed on specific physical servers in order to handle the
-      execution of various processes on that server.
+    desc: An agent is a program installed on specific physical servers in order to
+      handle the execution of various processes on that server.
+  - term: Agile
+    desc: A precursor to Devops; Agile is a software development and, more broadly,
+      business methodology that emphasizes short, iterative planning and development
+      cycles to provide better control and predictability and support changing requirements
+      as projects evolve.
   - term: Agile Software Development
     desc: A software development methodology and philosophy, focused on user feedback,
       software quality, and the ability to respond quickly to changes and new product
@@ -12,6 +25,8 @@ letters:
     desc: Application Load Balancing  an AWS service used for splitting the incoming
       traffic between multiple application instances across multiple Availability
       Zones to ensure your app runs smoothly.
+  - term: Amazon Aurora
+    desc: an AWS service, providing a cloud-based relational database, which became
   - term: Amazon AWS
     desc: Amazon Web Services  the most popular cloud service provider (CSP) according
       to the aforementioned State of DevOps report of 2017, offering a wide variety
@@ -29,6 +44,9 @@ letters:
   - term: Application Release Automation (ARA)
     desc: A practice of deploying software releases to various environments and their
       configurations with as little human interaction as possible.
+  - term: ARA (Application Release Automation)
+    desc: Tools, scripts or products that automatically install and correctly configure
+      a given version of an application in a target environment, ready for use.
   - term: Artifact
     desc: Any description of a process used to create a piece of software that can
       be referred to, including diagrams, user requirements, and UML models.
@@ -68,13 +86,17 @@ letters:
       and managing the underlying cloud infrastructure. IT Svit uses bastion hosts
       to provide
   - term: Behavior-Driven Development (BDD)
-    desc: An evolution of test-driven development that focuses on collaboration between
-      development and business stakeholders to define user stories that determine
-      the development of the application using a human-readable DSL.
-  - term: benefits of DevOps practices
-    desc: is using the immutable infrastructure, which means that in case of error
-      a clean state of infrastructure is launched immediately, rather than trying
-      to fix the issue and suffering from downtime in the process.
+    desc: A development methodology that asserts software should be specified in terms
+      of the desired behavior of the application, and with syntax that is readable
+      for business managers.
+  - term: Big Data analytics
+    desc: .
+  - term: Big Data analytics projects
+    desc: ', where there are multiple data types processes at various periods of time.'
+  - term: Black Box Testing
+    desc: A testing or quality assurance practice which assumes no knowledge of the
+      inner workings of the system being tested, and which thus attempts to verify
+      external rather than internal behavior or state.
   - term: Branching
     desc: The duplication of an object under review in source control so that the
       same code can be modified by more than one developer in parallel.
@@ -91,11 +113,19 @@ letters:
       or remotely in relation to the continuous integration server. It sends and receives
       messages about handling software builds.
   - term: Build Artifact Repository
-    desc: Centralized storage for all binaries used during build. Simplifies dependency
-      management and build processes, helps maintain security and consistency across
-      teams, helps make automated deployment practical and scalable.
+    desc: A tool used to organize artifacts with metadata constructs and to allow
+      automated publication and consumption of those artifacts.
+  - term: Build Automation
+    desc: Tools or frameworks that allow source code to be automatically compiled
+      into releasable binaries. Usually includes code-level unit testing to ensure
+      individual pieces of code behave as expected.
 - letter: C
   entries:
+  - term: Canary Release
+    desc: A go-live strategy in which a new application version is released to a small
+      subset of production servers and heavily monitored to determine whether it behaves
+      as expected. If everything seems stable, the new version is rolled out to the
+      entire production environment.
   - term: Capacity Test
     desc: A test that is used to determine the maximum number of users a computer,
       server, or application can support just before failing.
@@ -116,6 +146,8 @@ letters:
     desc: Amazon CloudWatch is the default Amazon service for monitoring the infrastructure
       and apps running on it. CloudWatch helps monitor and log the events, configure
       smart alerts and manage the system resources efficiently.
+  - term: Cluster
+    desc: a set of interconnected instances (
   - term: Commit
     desc: the process of pushing the code to the Git repository and the resulting
       piece of code pushed.
@@ -123,13 +155,14 @@ letters:
     desc: Any system made of a collection of similar, smaller pieces that are dynamically
       connected and can change to adapt to changes for the benefit of a macrostructure.
   - term: Configuration Drift
-    desc: How software and hardware configurations become inconsistent with the master
-      version due to manual and ad hoc changes (like hotfixes) that are not committed
-      back to version control. Often a significant source of technical debt.
+    desc: A term for the general tendency of software and hardware configurations
+      to drift, or become inconsistent, with the template version of the system due
+      to manual ad hoc changes (like hotfixes) that are not introduced back into the
+      template.
   - term: Configuration Management
-    desc: A process for establishing and maintaining consistent settings of a system.
-      These solutions also include SysAdmin tools for IT infrastructure automation
-      (e.g. Chef, Puppet, etc.).
+    desc: A term for establishing and maintaining consistent settings and functional
+      attributes for a system. It includes tools for system administration tasks such
+      as IT infrastructure automation.
   - term: Container
     desc: a software envelope separating the app and all resources required to run
       it from the infrastructure it runs on. Due to using Docker containers, any apps
@@ -148,9 +181,10 @@ letters:
       and network access. Much lighter-weight than machine-level virtualization and
       sufficient for many isolation requirement sets.
   - term: Continuous Delivery
-    desc: A software engineering approach in which continuous integration, automated
-      testing, and automated deployment capabilities allow software to be developed
-      and deployed rapidly, reliably, and repeatedly with minimal human intervention.
+    desc: Continuous Delivery is a set of processes and practices that radically removes
+      waste from your software production process, enables faster delivery of high-quality
+      functionality and sets up a rapid and effective feedback loop between your business
+      and your users.
   - term: Continuous Deployment
     desc: A software development practice in which every code change goes through
       the entire pipeline and is put into production automatically, resulting in many
@@ -162,6 +196,10 @@ letters:
       every time code is committed to the source control system. The process is often
       extended to include deployment, installation, and testing of applications in
       production environments.
+  - term: Continuous Integration (CI)
+    desc: Continuous Integration (CI) is a development practice that requires developers
+      to integrate code into a shared repository several times a day. Each check-in
+      is then verified by an automated build, allowing teams to detect problems early.
   - term: Continuous Quality
     desc: A principle that preaches the continuous quest for quality across the entire
       SDLC, starting from requirements definition, code development, testing, and
@@ -177,10 +215,21 @@ letters:
       time.
 - letter: D
   entries:
+  - term: Dark Launch
+    desc: A go-live strategy in which code implementing new features is released to
+      a subset of the production environment but is not visibly, or only partially,
+      activated. The code is exercised, however, in a production setting without users
+      being aware of it.
   - term: Datadog
     desc: an efficient cloud monitoring service, allowing to analyze the processes
       within any infrastructure, database or app at any scale, using a SaaS-based
       platform.
+  - term: Delivery Pipeline
+    desc: A sequence of orchestrated, automated tasks implementing the software delivery
+      process for a new application version. Each step in the pipeline is intended
+      to increase the level of confidence in the new version to the point where a
+      go/no-go decision can be made. A delivery pipeline can be considered the result
+      of optimizing an organizations release process.
   - term: Deployment
     desc: a stage of the software delivery lifecycle, centered at packaging the new
       software code, delivering it to the customers and updating the running apps,
@@ -190,10 +239,14 @@ letters:
       getting software from version control into the hands of your users. (source:
       informIT.com)'
   - term: DevOps
-    desc: An IT organizational methodology where all teams in the organization, especially
-      development teams and operations teams, collaborate on both development and
-      deployment of software to increase software production agility and achieve business
-      goals.
+    desc: DevOps (development and operations) is a software development phrase used
+      to describe a type of agile relationship between Development and IT Operations.
+      The goal of DevOps is to improve communication, collaboration, and processes
+      between the various roles in the software development cycle, in order to improve
+      and speed up software delivery.
+  - term: DevOps Intelligence
+    desc: Providing the intelligence and insight companies need to deliver software
+      more efficiently, with less risk, and with better results.
   - term: DevOps tools
     desc: like Prometheus and Grafana.
   - term: Django framework
@@ -254,6 +307,10 @@ letters:
     desc: an open source data collection and processing tool written in Ruby. It allows
       input from a huge variety of tools like ElasticSearch and provides output to
       a wide selection of dashboards configured with multiple plugins.
+  - term: Functional Testing
+    desc: Testing of the end-to-end system to validate (new) functionality. With executable
+      specifications, Functional Testing is carried out by running the specifications
+      against the application.
 - letter: G
   entries:
   - term: Git
@@ -298,9 +355,16 @@ letters:
   - term: Infrastructure
     desc: the whole complex of hardware, software, and processes required to run apps,
       as well as to collect, manage and store data. One of the most important
-  - term: infrastructure deployment and management
-    desc: through the use of declarative Terraform manifests, which can be stored
-      and versioned as the code to ensure repeatability and DevOps workflow continuity.
+  - term: Infrastructure as a Service (IaaS)
+    desc: Cloud-hosted virtualized machines usually billed on a pay as you go basis.
+      Users have full control of the machines but need to install and configure any
+      required middleware and applications themselves.
+  - term: Infrastructure as Code
+    desc: A system configuration management technique in which machines, network devices,
+      operating systems, middleware etc. are specified in a fully automatable format.
+      The specification or blueprint is regarded as code that is executed by provisioning
+      tools, kept in version control and generally subject to the same practices used
+      for application code development.
   - term: Infrastructure-as-a-Service (IaaS)
     desc: A self-service computing, networking, and storage utility on-demand over
       a network.
@@ -341,6 +405,13 @@ letters:
     desc: The time it takes to move work in progress (WIP) to a finished state in
       a manufacturing plant. In software development, this is represented by moving
       code changes to production.
+  - term: Lean
+    desc: Lean manufacturing or lean production is an approach or methodology that
+      aims to reduce waste in a production process by focussing on preserving value.
+      Largely derived from practices developed by Toyota in car manufacturing, lean
+      concepts have been applied to software development as part of agile methodologies.
+      The Value Stream Map (VSM), which attempts to visually identify valuable and
+      wasteful process steps, is a key lean tool.
   - term: Logstash
     desc: a part of the Elastic stack responsible for server-side data collection,
       processing and transfer to the storage. Logstash is essential for building
@@ -353,11 +424,10 @@ letters:
     desc: The average time it takes a system or component to recover from a failure
       and return to production status.
   - term: Microservices
-    desc: an example of the service-oriented approach in software architecture (SOA),
-      the practice of splitting the monolith application into a bunch of loosely coupled
-      services responsible for a certain aspect of operations. These fine-grained
-      services interact via lightweight protocols and APIs to provide product flexibility
-      and scalability.
+    desc: Microservices is a software architecture design pattern, in which complex
+      applications are composed of small, independent processes communicating with
+      each other using language-agnostic APIs. These services are small, highly decoupled
+      and focus on doing a small task.
   - term: Microservices Architecture
     desc: The practice of developing software as an interconnected system of several
       independent, modular services that communicate with each other.
@@ -389,6 +459,17 @@ letters:
     desc: a Kubernetes node pool is a group of several cluster points uniting the
       machines with the same configuration, which can be essentially treated and managed
       as a single entity.
+  - term: Non-functional Requirements (NFRs)
+    desc: The specification of system qualities such as ease-of-use, clarity of design,
+      latency, speed, ability to handle large numbers of users etc. that describe
+      how easily or effectively a piece of functionality can be used, rather than
+      simply whether it exists. These characteristics can also be addressed and improved
+      using the Continuous Delivery feedback loop.
+  - term: NoOps
+    desc: A type of organization in which the management of systems on which applications
+      run is either handled completely by an external party (such as a PaaS vendor)
+      or fully automated. A NoOps organization aims to maintain little or no in-house
+      operations capability or staff.
 - letter: O
   entries:
   - term: One-Stop Shop / Out-of-the-Box Tools
@@ -410,12 +491,21 @@ letters:
       configuration in particular) in the context of SOA, virtualization, environment
       provisioning. In short, it is a process of executing predefined tasks using
       predefined scripts executed with interactive tools like
+  - term: Orchestration Pipeline
+    desc: Tools or products that enable the various automated tasks that make up a
+      Continuous Delivery pipeline to be invoked at the right time. They generally
+      also record the state and output of each of those tasks and visualize the flow
+      of features through the pipeline.
 - letter: P
   entries:
   - term: Pair Programming
     desc: A software development practice where two developers work on a feature,
       rather than one, so that both developers can review each others code as its
       being written in order to improve code quality.
+  - term: Platform as a Service (PaaS)
+    desc: Cloud-hosted application runtimes, usually billed on a pay as you go basis.
+      Customers provide the application code and limited configuration settings, the
+      middleware, databases etc. are part of the provided runtime.
   - term: Platform-as-a-Service (PaaS)
     desc: Provides languages, libraries, services, and tools that allow developers
       to build and deploy applications in the cloud without worrying about underlying
@@ -426,12 +516,25 @@ letters:
   - term: Pod
     desc: a basic Kubernetes structure unit, a group of Docker containers deployed
       to a single host.
+  - term: Product Owner
+    desc: A person or role responsible for the definition, prioritization and maintenance
+      of the list of outstanding features and other work to be tackled by a development
+      team. Product Owners are common in agile software development methodologies
+      and often represent the business or customer organization. Product Owners need
+      to play a more active, day-to-day role in the development process than their
+      counterparts in more traditional software development processes.
   - term: Production
     desc: The final stage in a deployment pipeline where the software will be used
       by the intended audience.
   - term: Prometheus
     desc: an open source cloud monitoring solution with a powerful query language,
       time series database, dimensional data model and smart alerting capabilities.
+  - term: Provisioning
+    desc: The process of preparing new systems for users (in a Continuous Delivery
+      scenario, typically development or test teams). The systems are generally virtualized
+      and instantiated on demand. Configuration of the machines to install operating
+      systems, middleware etc. is handled by automated system configuration management
+      tools, which also verify that the desired configuration is maintained.
   - term: ProxMox
     desc: an open source Debian-based platform for deploying and managing virtual
       machines.
@@ -446,6 +549,19 @@ letters:
   - term: RDS
     desc: AWS Relational Database Service, a cloud database benefitting from a distributed
       nature of AWS services.
+  - term: Regression Testing
+    desc: Testing of the end-to-end system to verify that existing functionality has
+      not been negatively impacted by changes to the application.
+  - term: Release Coordination
+    desc: The definition and execution of all the actions required to take a new feature
+      or set of features from code check-in to go-live. In a Continuous Delivery environment,
+      this is largely or entirely automated and carried out by the pipeline.
+  - term: Release Management
+    desc: Release Management is the process of managing software releases from development
+      stage to the actual software release itself.
+  - term: Release Orchestration
+    desc: Release Orchestration is the use of tools like XL Release which manage software
+      releases from the development stage to the actual software release itself.
   - term: Rollback
     desc: An automatic or manual operation that restores a database or program to
       a previously defined state.
@@ -487,11 +603,16 @@ letters:
     desc: The use of special software (separate from the software being tested) to
       control the execution of tests and the comparison of actual outcomes with predicted
       outcomes.
+  - term: Test-Driven Development (TDD)
+    desc: A development practice in which small tests to verify the behavior of a
+      piece of code are written before the code itself. The tests initially fail,
+      and the aim of the developer(s) is then to add code to make them succeed.
 - letter: U
   entries:
   - term: Unit Testing
-    desc: A testing strategy in which the smallest unit of testable code is isolated
-      from the rest of the software and tested to determine if it functions properly.
+    desc: Code-level (i.e., does not require a fully installed end-to-end system to
+      run) testing to verify the behavior of individual pieces of code. TDD makes
+      extensive use of unit tests to describe and verify intended behavior.
   - term: Unit testing
     desc: the basis of CI/CD, unit testing is the practice of testing the app code
       in small chunks against the automated test codebase before building the app,
@@ -503,6 +624,10 @@ letters:
       stage is also known as beta testing.
 - letter: V
   entries:
+  - term: Value Stream Mapping
+    desc: A process visualization and improvement technique used heavily in lean manufacturing
+      and engineering approaches. Value Stream Maps are used to identify essential
+      process steps vs. waste that can be progressively eliminated from the process.
   - term: Vault
     desc: a Hashicorp product for securely storing the secrets like SSH keys, tokens,
       passwords, API keys and other important elements of Kubernetes infrastructure.
@@ -512,9 +637,25 @@ letters:
   - term: Virtual Machine (VM)
     desc: A software emulation of a physical computing resource that can be modified
       independent of the hardware attributes.
+  - term: Virtualization
+    desc: A systems management approach in which users and applications do not use
+      physical machines, but simulated systems running on actual, real hardware. Such
+      virtual machines can be automatically created, started, stopped, cloned and
+      discarded in a matter of seconds, giving operations tremendous flexibility.
   - term: VPC peering
     desc: AWS VPC is a service that logically isolates a certain amount of public
       AWS cloud to create virtual private clouds.
+- letter: W
+  entries:
+  - term: Waterfall
+    desc: A software development methodology based on a phased approach to projects,
+      from Requirements Gathering through Development etc. to Release. Phases late
+      in the process (typically related to testing and QA) tend to be squeezed as
+      delays put projects under time pressure.
+  - term: White Box Testing
+    desc: A testing or quality assurance practice which is based on verifying the
+      correct functioning of the internals of a system by examining its (internal)
+      behavior and state as it runs.
 - letter: Z
   entries:
   - term: Zabbix
