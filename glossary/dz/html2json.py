@@ -55,4 +55,4 @@ for cat, a in glosslist.categories.items():
     for h in a:
         table[ h['name'] ] = h[ 'description' ]
 
-print( json.dumps(dict(table)) )
+print( json.dumps(dict(table), indent=2, sort_keys=True) )

@@ -8,4 +8,4 @@ table = {}
 for row2 in data.body.find_all("div", attrs={"class": "az-term"}):
     table[row2.a.text] = row2.p.text.replace('\n',' ').strip()
 
-print( json.dumps(dict(table)) )
+print( json.dumps(dict(table), indent=2, sort_keys=True) )

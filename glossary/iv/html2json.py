@@ -23,4 +23,4 @@ for thing in blah.find_all(["h2","p"]):
                 #print("link \"%s\" after \"%s\"" % (link, after))
                 table[link] = after
 
-print( json.dumps(dict(table)) )
+print( json.dumps(dict(table), indent=2, sort_keys=True) )
