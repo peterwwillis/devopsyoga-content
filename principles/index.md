@@ -1,10 +1,10 @@
-This page attempts to document some of the values & principles behind DevOps. These are important concepts to understand, but they're also not enough to get started. To begin putting them into practice, skip to the next sections.
+<p>This page attempts to document some of the values & principles behind DevOps. These are important concepts to understand, but they're also not enough to get started. To begin putting them into practice, skip to the next sections.</p> <br />
 
 # Values
 Values are a set of beliefs, and they vary from culture to culture. DevOps values start with Agile and Lean values, and then add some of their own.
 
 ## Agile Values
-DevOps and Agile have [things in common, and differences][2]. DevOps evolved while Agile was already being widely practiced (and as a result, it was originally called "Agile Infrastructure"). Because of this, it inheritied Agile's values, such as:
+DevOps and Agile have [things in common, and differences][2]. DevOps evolved while Agile was already being widely practiced (and as a result, it was originally called "Agile Infrastructure"). Because of this, it inheritied Agile's 4 values:
 
  * **Individuals and Interactions over Processes and Tools**
  * **Working software over comprehensive documentation**
@@ -13,9 +13,24 @@ DevOps and Agile have [things in common, and differences][2]. DevOps evolved whi
 
 ## Lean Values
 ## DevOps Values
+As a way to codify some of the central focus of DevOps in a typical organization, Damon Edwards, John Willis and Jez Humble came up with an acronym [CALMS][3] \[[8][8]\] \[[9][9]\]
 
----
+ * Culture
+   A culture of cross-functional collaboration must be developed that embraces change and experimentation.
+ * Automation
+   * Continuous delivery
+   * Infrastructure as code
+ * Lean
+   * Focus on producing value for the end user
+   * Small batch sizes
+ * Measurement
+   * Measure everything
+   * Show the improvement
+ * Sharing
+   * Open information sharing
+   * Collaboration and communication
 
+<br />
 # Principles
 Principles are often seen as rules or laws, but in Agile and DevOps, principles are still more like guidelines or goals to strive for.
 
@@ -25,19 +40,19 @@ Agile has its "12 principles", which we can apply to more than just pure softwar
  1. **Customer happiness through early and continuous delivery** <br />
    Make the customer happy by giving working updates on a frequent basis. Note the key word *delivery*, which almost always involves more than just writing and testing software.
 
- 2. **Accommodate changing requirements throughout the development process**
+ 2. **Accommodate changing requirements throughout the development process** <br />
    Avoiding delays when a requirement or feature request changes.
 
- 3. **Frequent delivery of working software**
+ 3. **Frequent delivery of working software** <br />
    This is really the first principle in more detail.
 
- 4. **Daily collaboration between business stakeholders and developers throughout the project**
+ 4. **Daily collaboration between business stakeholders and developers throughout the project** <br />
    The business should be informing development and vice versa. But this should also be expanded to include "operations", and anyone else who has a hand in ensuring the project's success.
 
- 5. **Support, trust, enable, and motivate the people involved**
+ 5. **Support, trust, enable, and motivate the people involved** <br />
     This one is pretty simple: happy, motivated people are more productive. But you should also give them the resources and access they need, and then step back and let them do the job. To do this [you need trust][7], and to have trust you're probably gonna need really good hiring, and training.
 
- 6. **Enable face-to-face interactions** \[[6][6]\]
+ 6. **Enable face-to-face interactions** \[[6][6]\] <br />
     The closer people are to each other, the easier and more frequently they'll communicate. If you can't keep people close together, you'll need to work hard to improve their communication.
 
  7. 
@@ -76,25 +91,6 @@ Not only should Operations be getting constant feedback of the health of the pro
 
 ---
 
-## CALMS
-
-As a way to codify some of the central focus of DevOps in a typical organization, Damon Edwards, John Willis and Jez Humble came up with an acronym [CALMS][3]:
-
- * Culture
-   * Focus on people
-   * Embrace change and experimentation
- * Automation
-   * Continuous delivery
-   * Infrastructure as code
- * Lean
-   * Focus on producing value for the end user
-   * Small batch sizes
- * Measurement
-   * Measure everything
-   * Show the improvement
- * Sharing
-   * Open information sharing
-   * Collaboration and communication
 
 DevOps also inherits principles from [Lean manufacturing], such as the [Toyota Kata system].
 
@@ -106,3 +102,5 @@ DevOps also inherits principles from [Lean manufacturing], such as the [Toyota K
 [5]: https://www.smartsheet.com/comprehensive-guide-values-principles-agile-manifesto
 [6]: https://coachlankford.com/2018/10/07/agile-leader-pattern-4-for-building-awesome-teams-enable-face-to-face-interaction/
 [7]: https://www.amazon.com/SPEED-TRUST-Thing-Changes-Everything/dp/1416549005
+[8]: https://devops.com/using-calms-to-assess-organizations-devops/
+[9]: https://www.atlassian.com/devops
