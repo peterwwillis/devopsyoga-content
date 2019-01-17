@@ -68,21 +68,24 @@
           <nav class="crumbs">
           {% include nav.html ordered=True id="markdown-nav" %}
           </nav>
+          <nav>
           <ul>
             {% if edit_url != "" %}
             <li><a href="{{ edit_url }}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit this page on GitHub</a></li>
             {% endif %}
             <li><a href="{{site.github.repository_url}}/issues/new?body=File: [{{ page.path }}]({{site.url}}{{ page.url }})" class="nomunge"><i class="fa fa-check" aria-hidden="true"></i> File an issue about this page</a></li>
           </ul>
+          </nav>
+          <nav>
           Page Sections
           {% include toc.html html=content ordered=True id="markdown-nav" %}
           {% endunless %}
           {% if site.show_downloads %}
             <a href="{{ site.github.zip_url }}" class="button">
-              <small>Download</small>
-              .zip file
+              <small>Download</small> .zip file
             </a>
           {% endif %}
+          </nav>
         </aside>
       </div>
     </div>
