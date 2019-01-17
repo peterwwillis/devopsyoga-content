@@ -53,4 +53,4 @@ for thing in hmm.find_all(["h3","a"], text=True, recursive=True):
 
 table = bookslist.categories
 
-print( json.dumps(dict(table)) )
+print( json.dumps(dict(table), indent=2, sort_keys=True) )
