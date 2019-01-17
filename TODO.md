@@ -23,6 +23,15 @@ Anyone can grab any of these and start working on them. If you start work on som
  - [ ] Go through content and update unlinked [Bracketed] text, possibly automate
  - [ ] Start working on an "implementing devops" category/page thing
  - [ ] Write up the Chef DevOps Kungfu sections (https://www.youtube.com/watch?v=\_DEToXsgrPc, http://chef.github.io/devops-kungfu/#/40)
+ - [ ] Feature request: "Stories" section
+       The idea would be to have a section where people can submit a "DevOps Story". Some boilerplate
+       would prompt the user to tell their story, such as:
+        - When did you begin using DevOps methods?
+        - What were you using before?
+        - If you didn't use DevOps methods before, what was the transition like?
+          - What problems did you experience?
+          - How did you solve them?
+        - What tools did you use, and what did you use them for?
 
 ---
 ## Navigation

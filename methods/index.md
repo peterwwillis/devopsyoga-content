@@ -69,8 +69,8 @@ Some methods of DevOps come from the world of Lean Manufacturing and Lean Startu
 #### Andon cords
 This is more interperative, but similar to Toyota's TPS system and its Andon cord, DevOps organizations implement their own forms of Andon cords. [This article](https://itrevolution.com/kata/) explains a bit.
 
-#### Human-augmented automation
-The concept of [Autonomation][8] is to design automation that detects an error and stops a process so a human can intervene. One example includes software tests that hault deployment of a product if unexpected behavior is found. Whereas *fully-automated machines* can both detect and fix their own problems, *mostly-automated* or *pre-automated* machines can be made simpler and cheaper and allow a human to resolve a complex problem quickly.
+#### [Autonomation][8]
+Automation that detects an error and stops a process so a human can intervene. This can include CI/CD processes that stop a deployment when a test fails and waits for a user to fix the test. Another example is [ChatOps][22], using a chat bot to interact with automated tools with [a variety of uses][23]. This is considered pre-automation, as opposed to full-automation, which is where a process resolves its own problems.
 
 #### Value Stream Mapping
 VSM is a useful way to visualize the entire chain of events involved with a product, from the first idea to a delivered product. [The intent][10] is to identify what parts provide value, and what parts are merely wasteful.
@@ -180,3 +180,5 @@ For mid to large size organizations, some recommend [an incremental approach][16
 [19]: https://www.bmc.com/blogs/what-is-shift-left-shift-left-testing-explained/
 [20]: https://www.devopsassessment.net/
 [21]: http://www.jedi.be/blog/2012/05/12/codifying-devops-area-practices/
+[22]: https://www.pagerduty.com/blog/what-is-chatops/
+[23]: https://techbeacon.com/chatops-essential-guide-basics-benefits-challenges
