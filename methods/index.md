@@ -12,9 +12,19 @@ Several patterns of implementing DevOps practices are common in the industry.
 
 ### The Three Ways
 
+[The Three ways][24] are principles that many DevOps patterns are based on, and are referred to in The DevOps Handbook and The Phoenix Project.
+
 #### The first way: [Systems Thinking][2]
 
-Patterns of applying DevOps principles to yield high performance outcomes. Also known as "left to right" thinking or "the pipeline".
+From Gene Kim:
+
+> The First Way emphasizes the performance of the entire system, as opposed to the performance of a specific silo of work or department ? this as can be as large a division (e.g., Development or IT Operations) or as small as an individual contributor (e.g., a developer, system administrator).
+> 
+> The focus is on all business value streams that are enabled by IT. In other words, it begins when requirements are identified (e.g., by the business or IT), are built in Development, and then transitioned into IT Operations, where the value is then delivered to the customer as a form of a service.
+> 
+> The outcomes of putting the First Way into practice include never passing a known defect to downstream work centers, never allowing local optimization to create global degradation, always seeking to increase flow, and always seeking to achieve profound understanding of the system (as per Deming).
+
+Summarised: Patterns of applying DevOps principles to yield high performance outcomes. Also known as "left to right" thinking or "the pipeline".
 
 Three principles:
 1. Create increased "velocity" by accelerating each of the process components in the pipeline.
@@ -27,7 +37,13 @@ Three principles:
 
 #### The second way: [Amplifying Feedback Loops][3]
 
-Amplifying and shortening feedback loops such that corrections can be made fast and continuously. Also known as the "right to left" flow.
+From Gene Kim:
+
+> The Second Way is about creating the right to left feedback loops. The goal of almost any process improvement initiative is to shorten and amplify feedback loops so necessary corrections can be continually made.
+> 
+> The outcomes of the Second Way include understanding and responding to all customers, internal and external, shortening and amplifying all feedback loops, and embedding knowledge where we need it.
+
+Summarised: Amplifying and shortening feedback loops such that corrections can be made fast and continuously. Also known as the "right to left" flow.
 
 Three principles:
 1. Velocity of a correction in the flow is essential.
@@ -42,7 +58,14 @@ Three principles:
 
 #### The third way: [Culture of Continuous Learning and Experimentation][4]
 
-Using [Kaizen][5] to build knowledge and learn experimentally. Not unlike the retrospective after a scrum sprint. The general idea here is to experiment with how you do something, learn from it quickly, and then do it better. It's a very Lean/Agile way of moving development forward. By leveraging the past two methods, continuous learning is even faster.
+From Gene Kim:
+> The Third Way is about creating a culture that fosters two things: continual experimentation, taking risks and learning from failure; and understanding that repetition and practice is the prerequisite to mastery.
+> 
+> We need both of these equally. Experimentation and taking risks are what ensures that we keep pushing to improve, even if it means going deeper into the danger zone than we?ve ever gone. And we need mastery of the skills that can help us retreat out of the danger zone when we?ve gone too far.
+> 
+> The outcomes of the Third Way include allocating time for the improvement of daily work, creating rituals that reward the team for taking risks, and introducing faults into the system to increase resilience.
+
+Summarized: Using [Kaizen][5] to build knowledge and learn experimentally. Not unlike the retrospective after a scrum sprint. The general idea here is to experiment with how you do something, learn from it quickly, and then do it better. It's a very Lean/Agile way of moving development forward. By leveraging the past two methods, continuous learning is even faster.
 
 Ideally, as lessons are learned, they would be contributed back to an organizational knowledge base. In the absence of such a thing, you can just contribute what you've learned to this Wiki :-)
 
@@ -182,3 +205,4 @@ For mid to large size organizations, some recommend [an incremental approach][16
 [21]: http://www.jedi.be/blog/2012/05/12/codifying-devops-area-practices/
 [22]: https://www.pagerduty.com/blog/what-is-chatops/
 [23]: https://techbeacon.com/chatops-essential-guide-basics-benefits-challenges
+[24]: https://itrevolution.com/the-three-ways-principles-underpinning-devops/
