@@ -53,3 +53,5 @@
  - [ ] Architectually Significant Requirements
  - [ ] Service Owner Model
  - [ ] Runbook
+ - [ ] Service Oriented Architecture (SOA)
+ - [ ] Subject Matter Expert (SME)

@@ -1,0 +1,28 @@
+---
+# Topics To Add / Expand On
+ - [ ] Automated Recovery
+   - [ ] Roll back
+   - [ ] Roll forward
+ - [ ] Automated Environment de-provisioning
+ - [ ] Hypothesis Driven Development
+ - [ ] Testing in Productoin
+ - [ ] User Telemetry
+ - [ ] Fault Injection
+ - [ ] Add podcast sections
+   - [ ] DevOps Cafe Podcast (https://player.fm/series/devops-cafe-podcast)
+   - [ ] Arrested DevOps (https://player.fm/series/series-2108199)
+   - [ ] The New Stack Makers (https://player.fm/series/the-new-stack-makers)
+   - [ ] DevOps Mastery (https://player.fm/series/devops-mastery)
+   - [ ] DevOps on AWS Radio (https://player.fm/series/devops-on-aws-radio)
+   - [ ] DevOps Radio (https://player.fm/series/devops-radio)
+   - [ ] Continuous Discussions (https://electric-cloud.com/c9d9-devops-podcast/)
+   - [ ] Amdocs DevOps Podcast Series (https://www.listennotes.com/podcasts/amdocs-devops-podcast-series-amdocs-LGsJm1bjVZx/)
+   - [ ] Thoughtworks (https://www.stitcher.com/podcast/thoughtworks-podcast)
+   - [ ] DevOps Dimension (https://channel9.msdn.com/Shows/DevOps-Dimension)
+   - [ ] DevOps Fundamentals (https://channel9.msdn.com/Series/DevOps-Fundamentals)
+   - [ ] DevOps Lab (https://channel9.msdn.com/Shows/DevOps-Lab)
+   - [ ] DevOps Interviews (https://channel9.msdn.com/Blogs/DevOps-Interviews)
+   - [ ] Modern IT: DevOps to ITIL (https://channel9.msdn.com/Shows/Modern-IT-DevOps-to-ITIL-creating-a-complete-lifecycle-for-Service-Management)
+   - [ ] DevOps on Azure webinar (https://channel9.msdn.com/events/DevOps-oktats/DevOps-on-Azure-webinar)
+   - [ ] The Ship Show (https://player.fm/series/the-ship-show)
+
