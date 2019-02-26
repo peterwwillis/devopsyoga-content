@@ -1,7 +1,5 @@
+<br>
+<p style="font-size: 24px">New here? Start at <a href="overview.html" style="font-weight: bold">the overview</a>.</p>
 
-## Welcome
-This site is a multi-purpose Wiki and knowledge base about DevOps. If you aren't very familiar with DevOps yet, we encourage you to start at <a href="overview.html" style="font-weight: bold">the overview</a>. Otherwise you can skip right to any section on the sidebar.
-
-## Contributing to the Wiki
-DevOps is always evolving, and we need your help to curate content! Fork our [GitHub repo](https://github.com/peterwwillis/devopsyoga-content/) and check our [TODO list](https://github.com/peterwwillis/devopsyoga-content/blob/gh-pages/TODO.md), or just edit as you see fit.
+This is a new project, and there is a lot of ground yet to cover. If you would like to contribute your writing, fork our [GitHub repo](https://github.com/peterwwillis/devopsyoga-content/) and check our [TODO list](https://github.com/peterwwillis/devopsyoga-content/blob/gh-pages/TODO.md) (or just edit any pages you like) and submit a Pull Request. All you need to submit changes is a GitHub account.
 
