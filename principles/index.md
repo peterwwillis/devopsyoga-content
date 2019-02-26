@@ -7,26 +7,36 @@ Values are a set of beliefs, and they vary from culture to culture. DevOps value
 DevOps and Agile have [things in common, and differences][2]. DevOps evolved while Agile was already being widely practiced (and as a result, it was originally called "Agile Infrastructure"). Because of this, it inheritied Agile's 4 values:
 
  * **Individuals and Interactions over Processes and Tools**
+   - People are the cause of all business needs, and drive all development work. If processes and tools are prioritized over the human element, the team will soon be less responsive to change and be ineffective at providing for customer needs. For example, communication is usually easier when done directly between people, and more difficult when done through a tool or process.
+
  * **Working software over comprehensive documentation**
+   - You can create a fully-documented plan to build some software, or you can create a Minimum Viable Product. The documentation may not reflect the real-world operation of the software, but the MVP is it's own documentation. User Stories are a leaner form of a plan or documentation that a developer can use to build an MVP, faster than going though multiple rounds of formal documentation, planning, and approvals.
+
  * **Customer collaboration over contract negotiation**
+   - This emphasizes collaboration between the customer and development of the product, rather than negotiating the terms of a contract and disappearing. End users should see demos regularly.
+
  * **Responding to change over following a plan**
+   - When projects refuse to change because they are against a pre-defined plan, change later becomes even more expensive. Try to "shift left" expensive parts of the product into the beginning phases of development, and embrace change at any point. Make the thing work well now.
 
 ## Lean Values
 ## DevOps Values
 As a way to codify some of the central focus of DevOps in a typical organization, Damon Edwards, John Willis and Jez Humble came up with an acronym [CALMS][3] \[[8][8]\] \[[9][9]\]
 
- * Culture
-   A culture of cross-functional collaboration must be developed that embraces change and experimentation.
- * Automation
+ * **Culture** - A culture of cross-functional collaboration must be developed that embraces change and experimentation.
+
+ * **Automation**
    * Continuous delivery
    * Infrastructure as code
- * Lean
+
+ * **Lean**
    * Focus on producing value for the end user
    * Small batch sizes
- * Measurement
+
+ * **Measurement**
    * Measure everything
    * Show the improvement
- * Sharing
+
+ * **Sharing**
    * Open information sharing
    * Collaboration and communication
 
@@ -35,8 +45,11 @@ As a way to codify some of the central focus of DevOps in a typical organization
 Principles are often seen as rules or laws, but in Agile and DevOps, principles are still more like guidelines or goals to strive for.
 
 ## [Agile Principles][4] \[[5][5]\]
-Agile has its "12 principles", which we can apply to more than just pure software development. (Also note that some of the principles tend to repeat themselves)
+Agile has its "12 principles", which we can apply to more than just pure software development. You may note that some of the principles tend to repeat themselves.
 
+From [SmartSheet's Twelve Agile Manifesto Principles][https://www.smartsheet.com/comprehensive-guide-values-principles-agile-manifesto] (slightly modified):
+
+<!-- todo: add a quotation box here -->
  1. **Customer happiness through early and continuous delivery** <br />
    Make the customer happy by giving working updates on a frequent basis. Note the key word *delivery*, which almost always involves more than just writing and testing software.
 
@@ -55,7 +68,17 @@ Agile has its "12 principles", which we can apply to more than just pure softwar
  6. **Enable face-to-face interactions** \[[6][6]\] <br />
     The closer people are to each other, the easier and more frequently they'll communicate. If you can't keep people close together, you'll need to work hard to improve their communication.
 
- 7. 
+ 7. **Working software is the primary measure of progress** <br />
+
+ 8. **Agile processes to support a consistent development pace** <br />
+
+ 9. **Attention to technical detail and design enhances agility** <br />
+
+ 10. **Simplicity** <br />
+
+ 11. **Self-organizing teams encourage great architectures, requirements, and designs** <br />
+
+ 12. **Regular reflections on how to become more effective** <br />
     
 
  * **Holistic solutions to problems**
@@ -67,8 +90,11 @@ Agile has its "12 principles", which we can apply to more than just pure softwar
 
 DevOps methodology doesn't have many hard-and-fast principles, but there are a few that best practices has shown to be incredibly helpful, such as:
 
- - [Immutability]
-   This idea, that something does not change once it is created, helps make changes more predictable. This in turn makes developing features more predictable, and operating a product more predictable, and predictability results in more stable applications.
+ - [Immutability][] : The idea that something does not change once it is created. This helps make the following more predictable:
+   - Changes to infrastructure, policies, software, etc
+   - Feature development
+   - Operation of a product
+   - Application stability
 
 
 ---
